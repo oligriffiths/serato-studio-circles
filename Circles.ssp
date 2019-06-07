@@ -29,17 +29,17 @@
 			"name": "Club 808 Drum Kit",
 			"content_name": "Club 808 Drum Kit",
 			"groove_amount": 0.096817129629629656,
+			"mute": true,
 			"mix":
 			{
 				"mid_eq": 0.17066431045532227,
-				"volume": 0.98646775364303596
+				"volume": 0.99628044223132417
 			},
 			"effects":
 			[
 				{
-					"effect": ":/effects/Beam Me Up Echo.serato-effect",
-					"on": false,
-					"value": 0.0
+					"effect": ":/effects/Stereo Pan.serato-effect",
+					"value": 0.00026041666666665186
 				},
 				{
 					"effect": ":/effects/Light Sizzle Crusher.serato-effect",
@@ -59,7 +59,7 @@
 					"mix":
 					{
 						"low_eq": 2.6052083333333478,
-						"volume": 0.7342175037219254
+						"volume": 0.52053252178730625
 					},
 					"effects":
 					[
@@ -105,13 +105,14 @@
 					"file": "file:///Users/goli/Dropbox/Serato%20Studio/Samples/Drums/Hi%20Hat%204.wav",
 					"mix":
 					{
-						"volume": 0.32701351152467234
+						"volume": 0.34857257981403622
 					},
 					"effects_beats": 10,
 					"effects":
 					[
 						{
 							"effect": ":/effects/Drums Reverb.serato-effect",
+							"on": false,
 							"value": 0.12521701388888903
 						},
 						{
@@ -142,11 +143,11 @@
 					"mix":
 					{
 						"gain": 0.97205529928609069,
-						"high_eq": -2.895486111111115,
-						"volume": 0.19394255088083365
+						"volume": 0.11560188610764013
 					},
 					"start": 0.012969435307017581,
-					"end": 0.14292934484649125
+					"end": 0.14292934484649125,
+					"playback_speed": 0.75
 				},
 				{
 					"file": "content:///Serato%20Packs/Core/Drums/Trap%20Soul%20Drum%20Kit/01%20Kick%20%28Trap%20Soul%20Drum%20Kit%29.wav",
@@ -160,34 +161,34 @@
 					"file": "content:///Serato%20Packs/Essential%20Electronic/Drums/Electron%20Drum%20Kit/06%20Clap%20%28Electron%20Drum%20Kit%29.wav",
 					"mix":
 					{
-						"volume": 0.19028254403386594
+						"high_eq": -12.0,
+						"mid_eq": -0.1559027777777704,
+						"volume": 0.33349162793562653
 					},
 					"effects":
 					[
 						{
 							"effect": ":/effects/LPF.serato-effect",
-							"value": 0.28754340277777785
+							"value": 0.28708043981481568
 						},
 						{
 							"effect": ":/effects/Drums Reverb.serato-effect",
-							"value": 0.13417245370370384
+							"value": 0.41890533625730997
 						},
 						null
 					],
 					"end": 0.17402083333333335,
-					"pitch_shift": 1.0
+					"pitch_shift": 1.0,
+					"playback_speed": 0.89999999999999991
 				},
 				{
 					"file": "file:///Users/goli/Dropbox/Serato%20Studio/Samples/Drums/Thwack.wav",
-					"mix":
-					{
-						"volume": 0.64187885037981673
-					},
 					"effects":
 					[
 						{
 							"effect": ":/effects/Drums Reverb.serato-effect",
-							"value": 0.25986689814814956
+							"on": false,
+							"value": 0.73447627314814901
 						},
 						null,
 						null
@@ -237,6 +238,7 @@
 					2
 				],
 				"deck_automation_selected_parameter": "effect_1_value",
+				"drum_automation_drum_index": 2,
 				"drum_automation_selected_parameters":
 				[
 					"drum_0_volume",
@@ -342,6 +344,10 @@
 				"height": 229.0,
 				"scroll_position": 43,
 				"steps_per_quarter_note": 8
+			},
+			"view":
+			{
+				"deck_automation_selected_parameter": "mute"
 			}
 		},
 		{
@@ -376,7 +382,15 @@
 		{
 			"type": "sample",
 			"name": "circles-beat",
-			"mute": true,
+			"effects":
+			[
+				{
+					"effect": ":/effects/Stereo Pan.serato-effect",
+					"value": 1.0
+				},
+				null,
+				null
+			],
 			"sample_file": "file:///Users/goli/Dropbox/Serato%20Studio/Samples/Beats/circles-beat.wav",
 			"key_sync": false,
 			"original_key": "Fm",
@@ -404,7 +418,7 @@
 					"color": "#ffff5b00"
 				},
 				{
-					"start": 0.5050340136054422,
+					"start": 2.7471722833870391,
 					"end": 4.0357369614512475,
 					"color": "#ffff0000"
 				},
@@ -424,12 +438,12 @@
 					"color": "#ff14ff00"
 				},
 				{
-					"start": 2.5251700680272111,
+					"start": 2.4036964061940562,
 					"end": 4.0357369614512475,
 					"color": "#ffff0000"
 				},
 				{
-					"start": 3.030204081632653,
+					"start": 0.25395682286072274,
 					"end": 4.0357369614512475,
 					"color": "#ff6eff00"
 				},
@@ -442,14 +456,23 @@
 			"sequence_view":
 			{
 				"height": 229.0
+			},
+			"view":
+			{
+				"selected_cue_indices":
+				[
+					6
+				],
+				"cue_automation_cue_index": 6
 			}
 		},
 		{
-			"type": "instrument",
-			"name": "Fenduh Rhodes Piano",
+			"type": "plugin",
+			"name": "Alpha Free",
+			"mute": true,
 			"mix":
 			{
-				"volume": 0.35160999615797828
+				"volume": 0.46202572400217479
 			},
 			"effects":
 			[
@@ -467,21 +490,314 @@
 					"value": 0.0
 				}
 			],
-			"instrument_file": "content:///Serato%20Packs/Core/Instruments/Fenduh%20Rhodes%20Piano/Fenduh%20Rhodes%20Piano.serato-instrument",
-			"attack": 0.00057187657948467089,
-			"release": 0.1246419476939524,
-			"play_in_key": false,
+			"plugin_file": "file:///Library/Audio/Plug-Ins/VST/LinPlug/FreeAlpha.vst",
+			"state": "3884.CMlaKA....fQBMDZ....AvzcAYD...P.....PC............................................................................................................................................................................fCLByQYME4.........fL...............SD...................Y....E...............A..........B....PElaf.B....C....CklbiUGagIG..........T.....A.........P..........D....................D.....B....OYlYf......A...............................A.........P..........B....f.....ao41Z......A...fbkMVYoYWYqLWYtQF.....A....DyQYMEFA........fL...PJ....A..........................A....fzBH..A.........A.........f.....D..........U....uvTZhIWXxk2KAAGbrk1XgQWZu4FHSUGbv8lbz8BSo4FTrU2YuDDavgVXfLCHBElaqM2KAwFbnElQRUTQfHyKKUTVfvTZtIEZuQVYyAhc14hY3AG.D..........A.........PB...P..........7G...P.....+A..............H....vVZtsF.....A....D....P.....A..........A....SASL............................A..........LNUEU3H.........x.........DH...vDPKPPfcoBAcQ0RDTPPtQPTAMIAcSmtDTR+iSPp8+PAAvoOED..vUP1SQZAAQ71EzDPKXPfcohAcQ0RFTPPtYPTAMoAcSmtFTR+iaPp8+vAAvoOGD..vcP1SQ5AAQ71GzDPKfPfcoBBcQ0RHTPPtgPTAMIBcSmtHTR+iiPp8+PBAvoOID..vkP1SQZBAQ71IzDPKnPfcohBcQ0RJTPPtoPTAMoBcSmtJTR+iqPp8+vBAvoOKD..vsP1SQ5BAQ71KzDPKvPfcoBCcQ0RLTPPtwPTAMICcSmtLTR+iyPp8+PCAvoOMD..v0P1SQZCAQ71MzDPK3PfcohCcQ0RNTPPt4PTAMoCcSmtNTR+i6Pp8+vCAvoOOD..v8P1SQ5CAQ71OzDPK.QfcoBDcQ0RPTPPtAQTAMIDcSmtPTR+iCQp8+PDAvoOQD..vEQ1SQZDAQ71QzDPKHQfcohDcQ0RRTPPtIQTAMoDcSmtRTR+iKQp8+vDAvoOSD..vMQ1SQ5DAQ71SzDPKPQfcoBEcQ0RTTPPtQQTAMIEcSmtTTR+iSQp8+PEAvoOUD..vUQ1SQZEAQ71UzDPKXQfcohEcQ0RVTPPtYQTAMoEcSmtVTR+iaQp8+vEAvoOWD..vcQ1SQ5EAQ71WzDPKfQfcoBFcQ0RXTPPtgQTAMIFcSmtXTR+iiQp8+PFAvoOYDD....wHCHT8lakARQwUWXrA...P..........G8jTPgkB........xbTVSwdA..............A...PPz01ayAGZkIWYf.SL....D....vC....E....A0FbfTja1UFauAWYf.BHf......E....C8layQWXtQGHf.BHf.BHf......E....FkFazUlbfTja1UFauAWYf......E....FkFazUlbfTja1UFauAWYf......E....N8FckABbrEVdkQFJrklao......E....C8layQWXtQGHf.BHf.BHf......E....VUFauMVZzkGHf.BHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......yG...vi8++CwI...Dm...KCA..3FD..vmO..............................................................................................E....OM2XfDCHSkWasUFcxkGHf......E....OM2XfHCHA0FbrkFc0QVYf......E....FkFazUlbfHUYy8lag41XkA.....E....MEFcxkFdfPTYvQGZfHCHf......E....FkFazUlbfLTcz8lYlABHf......E....OM2XfHCHPkFcigFHf.BHf......E....MEFcxkFdfPTYvQGZfDCHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf......E....f.BHf.BHs.RKfzBHf.BHf.....P.....A....D.....P....EoCWAI2Xnklckw0TuUmaj0RPxMFZoYGWLklaPwVcmARKfXjbkUFHAwFbnEFWAQWauMGbnUlbkABLw3hQXAE..P..........A...............................C....PF....B....LAULx................................f.....HgwFa.....f.....SF8DHw....................HE....B....OM2XfDC.........A....H....f.....jy...DCLMQEQ.........vR....C....SE1cBE1byMC.....D.....BNh..C....SE1cBE1byIC.....D.....BNh.fA....w.SSTQD...P.....rD...v....vTo4VYf.BHf......A....fHiH.v....vTo4VYf.BHf......A....fHiH.......LHMjU7..........x....A....bU...fG....aG...3A...PP....A..........Y....jA........fLvvTSHA...L.....x....A....f.....UxkVXtcF..7B...P.....H....7jYlABH.........................HC...fLvvTSHA...P.....x....A....f.....UxkVXtcF..DB...P.....H....7jYlABH.........................HC...fLvvTSHA...T.....x....A....f.....UxkVXtcF..zC...P.....H....7jYlABH.........................HC...PLvvTSPA.........x....A....f.....UxkVXtcF..Ld...P.....H.....xSlYFH.........j....PDm........HC..............DCLL0DT....A....fL...P.....H....PkboElamA..jA...D.....B....fDyKz.B..............DwI........x...............w.CSMAE...f.....HC...D.....B....TIWZg41Y...Y....A....f.....Hw7BMf...............QbB.......fL..............vLvTTSXA.........x....A....b7C........z++++mH..............D....P.....GA...DB...fV....g..........Y....jA.........Y....y.SQMgE...P.....HC...D.....zD..............Dm.............P.....A....bD...PH....ZA...DB.........jA...PF.........jA....yQR0DP.........fL....B....BUlajA....PG....A....f.....Uo0VY.....f....vSlYFHf....PF...fLD8zQv..........x....A....................D..........w.........fLD8zQv....D.....x....A....................D..........w.........PLvPjUj..........x....A..........B....HElbjABH...LSYjUv..........x....A....f.....SPEiL.....fXI...L..............PLNMzQf....D.....x....A....f....vUnkFckA...DSSRYED....A....fL....",
+			"parameters":
+			[
+				{
+					"name": "0_Osc 1 Wave 1",
+					"value": 0.68965518474578857
+				},
+				{
+					"name": "1_Osc 2 Wave 1",
+					"value": 0.0
+				},
+				{
+					"name": "2_Osc 1 Wave 2",
+					"value": 0.65517240762710571
+				},
+				{
+					"name": "3_Osc 2 Wave 2",
+					"value": 0.0
+				},
+				{
+					"name": "4_Osc 1 Range 1",
+					"value": 0.5
+				},
+				{
+					"name": "5_Osc 2 Range 1",
+					"value": 1.0
+				},
+				{
+					"name": "6_Osc 1 Range 2",
+					"value": 0.5
+				},
+				{
+					"name": "7_Osc 2 Range 2",
+					"value": 1.0
+				},
+				{
+					"name": "8_Osc 1 Mix",
+					"value": 0.059999998658895493
+				},
+				{
+					"name": "9_Osc 2 Mix",
+					"value": 0.0
+				},
+				{
+					"name": "10_Filter Type",
+					"value": 0.0
+				},
+				{
+					"name": "11_Filter Cutoff",
+					"value": 0.82109791040420532
+				},
+				{
+					"name": "12_Filter Resonance",
+					"value": 0.47999998927116394
+				},
+				{
+					"name": "13_Filter Env-Depth",
+					"value": 0.50499999523162842
+				},
+				{
+					"name": "14_Filter FM-Depth",
+					"value": 0.0
+				},
+				{
+					"name": "15_Filter FM Source",
+					"value": 0.0
+				},
+				{
+					"name": "16_Amp-Env Attack",
+					"value": 0.0
+				},
+				{
+					"name": "17_Fil-Env Attack",
+					"value": 0.0
+				},
+				{
+					"name": "18_Amp-Env Decay",
+					"value": 0.77998584508895874
+				},
+				{
+					"name": "19_Fil-Env Decay",
+					"value": 0.50699073076248169
+				},
+				{
+					"name": "20_Amp-Env Sustain",
+					"value": 0.0
+				},
+				{
+					"name": "21_Fil-Env Sustain",
+					"value": 0.0
+				},
+				{
+					"name": "22_Amp-Env Fade",
+					"value": 0.49399998784065247
+				},
+				{
+					"name": "23_Fil-Env Fade",
+					"value": 0.5
+				},
+				{
+					"name": "24_Amp-Env Release",
+					"value": 0.13688692450523376
+				},
+				{
+					"name": "25_Fil-Env Release",
+					"value": 1.0
+				},
+				{
+					"name": "26_LFO 1 Attack",
+					"value": 0.011777744628489017
+				},
+				{
+					"name": "27_LFO 2 Attack",
+					"value": 0.0
+				},
+				{
+					"name": "28_LFO 3 Attack",
+					"value": 0.0
+				},
+				{
+					"name": "29_LFO 1 Wave",
+					"value": 0.20000000298023224
+				},
+				{
+					"name": "30_LFO 2 Wave",
+					"value": 0.20000000298023224
+				},
+				{
+					"name": "31_LFO 3 Wave",
+					"value": 0.20000000298023224
+				},
+				{
+					"name": "32_LFO 1 Frequency",
+					"value": 0.55140137672424316
+				},
+				{
+					"name": "33_LFO 2 Frequency",
+					"value": 0.24446035921573639
+				},
+				{
+					"name": "34_LFO 3 Frequency",
+					"value": 0.24446035921573639
+				},
+				{
+					"name": "35_LFO 1 Mono",
+					"value": 0.0
+				},
+				{
+					"name": "36_LFO 2 Mono",
+					"value": 0.0
+				},
+				{
+					"name": "37_LFO 3 Mono",
+					"value": 0.0
+				},
+				{
+					"name": "38_LFO 1 Sync",
+					"value": 0.0
+				},
+				{
+					"name": "39_LFO 2 Sync",
+					"value": 0.5128205418586731
+				},
+				{
+					"name": "40_LFO 3 Sync",
+					"value": 0.5128205418586731
+				},
+				{
+					"name": "41_Mod Amount 1",
+					"value": 0.5997999906539917
+				},
+				{
+					"name": "42_Mod Amount 2",
+					"value": 0.0
+				},
+				{
+					"name": "43_Mod Amount 3",
+					"value": 1.0
+				},
+				{
+					"name": "44_Mod Amount 4",
+					"value": 1.0
+				},
+				{
+					"name": "45_Mod Amount 5",
+					"value": 0.71495002508163452
+				},
+				{
+					"name": "46_Mod Amount 6",
+					"value": 0.7103000283241272
+				},
+				{
+					"name": "47_Mod Amount 7",
+					"value": 0.69994997978210449
+				},
+				{
+					"name": "48_Mod Amount 8",
+					"value": 0.5
+				},
+				{
+					"name": "49_Mod Amount 9",
+					"value": 0.5
+				},
+				{
+					"name": "50_Mod Amount 10",
+					"value": 0.5
+				},
+				{
+					"name": "51_Mod Amount 11",
+					"value": 0.5
+				},
+				{
+					"name": "52_Main Volume",
+					"value": 0.52668040990829468
+				},
+				{
+					"name": "53_Velocity",
+					"value": 0.61725908517837524
+				},
+				{
+					"name": "54_Glide Time",
+					"value": 0.0
+				},
+				{
+					"name": "55_Glide Mode",
+					"value": 1.0
+				},
+				{
+					"name": "56_Glide Bend",
+					"value": 0.80208331346511841
+				},
+				{
+					"name": "57_Glide Time/Rate",
+					"value": 0.0
+				},
+				{
+					"name": "58_Noise Level",
+					"value": 0.0
+				},
+				{
+					"name": "59_Noise Color",
+					"value": 0.0
+				},
+				{
+					"name": "60_Precision",
+					"value": 1.0
+				},
+				{
+					"name": "61_Drive",
+					"value": 0.0
+				},
+				{
+					"name": "62_Osc 1 Freerun",
+					"value": 0.0
+				},
+				{
+					"name": "63_Osc 2 Freerun",
+					"value": 0.0
+				},
+				{
+					"name": "64_Osc Spread",
+					"value": 0.0
+				},
+				{
+					"name": "65_Osc 2 Ringmod",
+					"value": 0.0
+				},
+				{
+					"name": "66_Detune",
+					"value": 0.0
+				},
+				{
+					"name": "67_Osc Balance",
+					"value": 0.029999999329447746
+				},
+				{
+					"name": "68_Voices",
+					"value": 1.0
+				},
+				{
+					"name": "69_Chorus Wet",
+					"value": 0.64999997615814209
+				},
+				{
+					"name": "70_Chorus Time",
+					"value": 0.86330467462539673
+				},
+				{
+					"name": "71_Chorus Rate",
+					"value": 0.49098756909370422
+				},
+				{
+					"name": "72_hidden/reserved",
+					"value": 0.0
+				}
+			],
 			"sequence_view":
 			{
 				"height": 314.0,
-				"scroll_position": 56,
-				"steps_per_quarter_note": 8
+				"scroll_position": 57
 			}
 		},
 		{
 			"type": "drums",
 			"name": "Percussion",
 			"renamed": true,
+			"mute": true,
 			"drums":
 			[
 				{
@@ -1073,7 +1389,7 @@
 				},
 				{
 					"name": "32_LFO 1 Frequency",
-					"value": 0.02843032032251358
+					"value": 0.049263652414083481
 				},
 				{
 					"name": "33_LFO 2 Frequency",
@@ -1250,7 +1566,7 @@
 				"volume": 0.29119641997709422
 			},
 			"plugin_file": "file:///Library/Audio/Plug-Ins/VST/u-he/Zebralette.vst",
-			"state": "9172.CMlaKA....fQBMDZ....ALUSDMC...P.....A.............................................................................................................................................................................vHzLBbm0VOHMEHAQGag4FcoMFHScWYrwlBunBPMUFcgofBAUGcn8lb5nvIH81cgIGYfL0XgImbmnfBUMWXmUlNJbRSWAROfP2atU1IJnfJunfBiDTS8nUYhIWXrUFczUlBiXUYxMWOw.CLvLiBiTjajkVXt0CaoQGcrUlBi3Va8DyLJLRay0iau4VYJLRay0SSuQ1UnwlBiz1b8.UZzMFZWovHsMWOCQmbrEjBiz1b8LDcxwlPJLRay0CSl81QwnvHsMWOGEFckovHsMWOVUFauMVZzkmBiz1b8.kbkM2b0IWYJLRay0yRkkmQuwFaucmBiz1b8Tja1EiBiz1b8zzTEcTLJLRay0CSl8VLJLha10iLJLRa10yQgQWYJLRa10SQtYWLJLxXs0SagklaJLzXOAWOw.CMtbSNJLBSF8zQ8DiBizzajYDVwzSLJLBQkwVX4ESOwnvHi0VOPMzaxUlBSITXyUVOznvT2klam0CLt.CLJLEUxk1Y8DiBPM0atcVOwn.TF8Faj0CLJ.kQowVY8DiBGYTZrUVOxnvQSMVXrUVOvnvPnwTX40CLJLUcxI2S8DiBRUlc8bCMxHiBLUDQ8.iKv.iBPEzQE0CLJ.UXmU1bO4VOvnvPuIWYN0yLJLEaoMVY8PiBUkzWuAWOwnPSoQVZA0SMJzTZjkFT8XiBDYzarQVO2nvPzIGaA0iLJLDcxwlP8DSLJLxXs0CSF8zQJLUdtMVOsDiBTIWZm0CLJbUX1UVOwn.TnMWY8DCNtTCLJ.0arElb8.iBiLVa8X0PCovHLYzSwzSLJLxSSMTL8DiBV8VZiU1b8.iBV8VZiklam0SLJzzajUVOvn.TuIGcg0TOvn.TuIGcg0CLt.CLJ.0axQWXxzCLt.CLJ.kTg41Yk0SLv.iKv.iBPITOxn.TBQTOxn.QxYFc8DiBMQUctMUOvnPSTUmaN0CNJzDU04FU8jiBTI2bv0SKwHiBFQUct0CLt.CLJLxXs0SQNYULJzzajUVOxnPZM8FYk0CLJLWSuQVY8.iBo4VZz0CLt.CLJDDcq0CMw3RMvn.QkMVO0.iKv.iBSU2b8DCLv3BLvnvT0MGU8.iKv.iBSU2bxzCLt.CLJHUYr0yM33BLvnfUkwVOv3BLvnfUxjTOv3BLvnfUxDTOv3BLvnfUxPTOv3BLvnfUxLUOv3BLvnfUxXjT8.iKv.iBVIyTxzCLt.CLJXkLR0CLt.CLJrjLI0CLt.CLJrjLA0CLt.CLJrjLD0CLt.CLJrjLS0CLt.CLJrjLFIUOv3BLvnvRxLkL8.iKv.iBKIiT8.iKv.iBSw1avUVOsbSLt.CLJPkPgMWY8.iBiLVa8zzTEcTLJPUaU4VOvnPQtYWOw.iBVUFa8.iKv.iBAQ2Z8.iKv.iBLAGc8.iKv.iBRUFa8.iKv.iBTIWZm0CLJLxXs0CSF8TLJLUdtMVOxLiBTIWZm0CLJbUX1UVOwn.TnMWY8.iKv.iBP8FagIWOvn.QrkWOv3BLvn.QMMUL8.iBD0DQwzCLt.CLJHUXzUVOv3BLvnfQMMUL8.iBF0DQwzCLt.CLJLxXs0ySSMTLJbUX1UVOyn.U04VY8.iKv.iBKUVdSMFa8DCLv3BLvn.UMMkbi0CLJPUSDAGc8.iKv.iBPg1bk0CLt.CLJ.EZy0zTxMVOwDiBPg1bMQDbz0SL23BLvnvUNUWa8TiKv.iBWA0TxMVOwHiBWAEQvQWO33BLvnfUz8FQ8.iKv.iBCUmb1UVOwDiBPIWYi0yLtPCLJXDVwPEb8DCLJLkQXESOw.iKv.iBFgULSMVOwnfQXECQz0yLx3BLvnfQXICUv0iLJLkQXISOsHyMt.CLJXDVxL0X8DiBFgkLDQWOwXiKv.iBP8Fa40yLJPDc04VOwTiKv.iBKY0bi0SLxnfUuwVOz.iKv.iBV8FaSMVO4nfUuwFQz0SKwfiKv.iBPEla8.iKv.iBPElaSMVO4n.Tg4FQz0CMv3BLvnvT441X8.iKv.iBS41XSMVOvnvTtMFQz0CLt.CLJLkai8ja8.iBP8FaW0CLt.CLJ.0cs8ja8.iBWEFUh0SLynfTkAEZy0CLJ3zax0VO0.iK0.iBRUlaj0CLJLxXs0iUMkFdJ.UXt0CLt.CLJX0ar0SMv3BLvnfUCETOwnPSuQ1TxMVOvnPSuQFQvQWOv3BLvn.Tg41TxMVOvn.Tg4FQvQWOv3BLvnPPzQ2T8DiBiLVa8zzajYDVwnPSuQVY8HiBCUlaz0SMv3BLvnvTvUFY8.iKv.iBPg1SlYVO2XiKxTiBDAGcn0SN33hL0nfQkUlP8HSMt.CLJzTZ30iMx3hL0n.SCUGc8.iKv.iBHMTcz0CNv3BLvnPT0EFY8jiMtTCLJDEbnMWOxTiKv.iBLUVb8.iKv.iBHUVb8zhMt.CLJDUL8.iKv.iBQISOv3BLvnPQQ8la8DiBiLVa8PTYrEVdwnPSuQVY8.iBMkFd8TCLt.CLJXjP8DyMtTCLJLjP8TyLt.CLJvDT8DCLv3BLvn.RP0CLt.CLJPjb10CLt.CLJLUdtMVL8jiBSkmaiISOznvT441XyzCMJLUdtMFM8PiBTASOw.CLt.CLJPUL8DCLv3BLvn.UxzSLv.iKv.iBTMSOw.CLt.CLJ.UXtESOsjiMt.CLJ.UXtISOw.CLt.CLJ.UXtMSOsDCLv3BLvn.Tg4FM8DCLv3BLvnvHi0VOZ0TXyovSSMTL8DCMJzzTEcTL8DSMJnfBJnfBu7BHSU1Xzk1atAhYuIGH0cFa4AxXu0FbxU1byUFYfHVZtElb4ABQgQWXJ7xKfPzSNcBUfP0SUMDRfPERIMkBJPBIjPRL4.SL1nvOmAmXikFYjslNmAmXiEFYjwlNqclZrUVYjwlNgslansFYjwlNmAmXikFYjwlNqclZr0VYjwlNkM1Yg8lYjwlNJbFbhMVXjQVa5vVanUlXjQVa5.WYv4lYkQVa5PVa5DVX5Pla5T1X5nFa5D1Z5PFb53FZ5TlX5PlZ5XVZ5jVX5LlBjoyZmoyYgoCYkoSZvoiXioCasoSaioSYkoCauoSYgoSYjoyYvoyYlExYjc1Xk4VRBElXBkyXvUVaYcFYmI1YsofPxPSNmQ1YiUlaIckPw.SYoYFYiEVRnU1YsclXm8FZkclZmQ1XgYFYnglVm0VLi81YoQ1XnElPzHyYjc1Xk4VRJbkP2PyYjc1Xk4VRWITLvjFYtEVXlU1Yhwlajc1ZoIFZu8FZrgVZnIlapklarEiZlszZhU1aoI1YpI1Yl8lXnElBiE1Yi4VYu81YtYVagk1aowFblo1ZgMFZgI1aooVUi41YiEyZtYFZlU1YtMFauUlaugVagklZi8lXjEFatkjZno.YoY1XnIlYuM1YmQ1YiUlaIEVYBECLlEFaqMlaBcFYmMVYtkjPgIlP4TVZYgFZmIFZicVYiElYjcFYmIFZiEiPJHCMybFYmMVYtkDSBEyL3bFYmMVYtkjPgIlPxXSMmQ1YiUlaIckPw.yXuIiPnY1YsgVYiEFZjcFYmI1YsokPxPiBLcjPxbkPwbULBECSWITLqE1UBESagckPw7VXWcFYmMVYtkjPgMlP2vzQBUCSGIjLWITLWEiPwvzUBEyZgckPwnPagckPw7VXWIjLIITLhEVRBEyXgkjPwPVXIITLWkjPwXVXIITLOkjPwfVXIITLLkjPwjVZIITLpEVRBEiZokjPJDyZgkjPwrVZIITLrEVRBECaokjPwzVXIITLskVRBEiagkjPw3VZIITLuEVRBEyaokjPw.WXIITLvkVRBICQBEiBgUFQBESXoQjPwDVaDITLhEFQBEiXkQjPwHVZDITLh0FQBEyXgQjPwLVYDITLikFQBEyXsQjPwPVXDITLPQjPwn.YoQjPwDDQBEyUDITLUQjPwTVZDITLk0FQBEiYgQjPwXVYDITLKQjPwXVaDITLOQjPwbVYDITLmkFQBEyYsQjPJDCZgQjPwfVYDITLnkFQBECZsQjPwvDQBESZiQjPwjVYDITLocFQBESZoQjPwj1ZDITLo0FQBESZuQjPwnVXDIjBwn1XDITLpUFQBEiZmQjPwnVZDITLpsFQBEiZsQjPwn1aDITLqEFQBEyZiQjPwrVYDITLNQjPwrVZDITLqsFQBoPLq0FQBEyZuQjPwvVXDITLrMFQBECakQjPwv1YDITLrkFQBECaqQjPwLEQBEiUDITLsEFQBECUDITLsUFQBESaJbFQBESaoQjPwz1ZDITLs0FQBESauQjPw3VXDITLtMFQBEiakQjPw31YDITLtkFQBEiaqQjPw3VaDITLt8FQBEiBuEFQBEyaiQjPw7VYDITLucFQBEyaoQjPw71ZDITLu0FQBEyauQjPw.WXDITLvMFQBECbkQjPw.2YDITLvkFQBoPLvsFQBECbsQjPw.2aDcFYmMVYtkDYgE1XBcCSGIzLgUlP1DVYBMSXkEVaBESNGMlZl0VXvwlaG8lXnslUBIyUJHTLLcjPyXlYuIFZqQ1aBECSWIjLGYDRqQVPkclQlglUBESagckPyXDRqQFar0las0VZsQ1aBEiXgkjYlEiXlcjBBMiZqolZwXkPwbURC0FbvQFYuIzLpslZpEiUBEyXgkjPwvzQBMiZqolZwXkPwvzQBciZqolZwXkPwbULBciZqofZpEiUBEyZgckP2n1ZpoVLVITLuE1UBciZqolZwXkPw7TRBciZqolZwXkPwXVXIIzMpslZpEiUBEyUIIzMpslZJnVLVITLjEVRBciZqolZwXkPwLVXIIzMpslZpEiUBEiXgkjP2n1ZpoVLVITLokVRBciZqolZwXkPwnVXIIzMpslBpoVLVITLpkVRBciZqolZwXkPwrVXIIzMpslZpEiUBEyZokjP2n1ZpoVLVITLrEVRBciZqolZwXkPwvVZIIzMpovZpoVLVITLsEVRBciZqolZwXkPwzVZIIzMpslZpEiUBEiagkjP2n1ZpoVLVITLtkVRBciZqolZwXkPw7VXIIzMJn1ZpoVLVITLukVRBciZqolZwXkPw.WXIIzMpslZpEiUBECbokjP2n1ZpoVLVITL0bFYmMVYtkTXkMVXBgyUBEiBvbjPwvzQBEiLxbjPwvzQBEiLxbjPwvzQBEiLxbjPwvzQBEiLxbjPwvzQBEiLxbjPwvzQBEiLxbjPwvzQBEiLxnvQBECSGITLxHyQBECSGITLxHyQBECSGITLxHyQBECSGITLxHyQBECSGITLxHyQBECSGITLxHyQBECSGITLxHyQJHTLLcjPwHiLGITLLcjPwDyMLwFbBUCSGITLwbCSrAmP0vzQBESL2vDavITMLcjPwDyMLwFbBUCSGITLwbCSrAmBBUCSGITLwbCSrAmP0vzQBESL2vDavITMLcjPwDyMLwFbBUCSGITLwbCSrAmP0vzQBESL2vDavITMLcjPwDyMLo.avITMLcjPwDyMLwFbBUCSGITLwbCSrAmP0vzQBESL2vDavITMLcjPwDyMLwFbBUCSGITLwbCSrAmP0vzQBQiLJ.yMgUlPxbFYmMVYtkjXgITNWsTYsEzXkgFby7TYoQVXhkFZvMyYjc1Xk4VRBMVXBgyUvUFbtYVYCs1ZvIlTGEkBTAmYC0lZncFYuESat0Vak0FYuYDRMEjSEUEYu4lYnk1YpMTZrcVamgFYuE1XiwVZnMzanAGaqo1PnA2YqMUPKofRPMzTnUlXjMjXrMFbt4VPjIVXosVaAUWTTglYAgmQHsFYAomQHsFYAMEZkoFYA4TQUETVRkFYAkmXrMFbt4VPJXDRMEjYgklahg1PKoDakEzRJA0PiolYsEFbCo1auA2XnMjZmgUZrMzYoolXu4VPuQ1ZlUTPJwVYkk1Pk0FYnklBpMTdD8jVAkkToQVP2YDRMMjYgklahg1PKoDakETbhw1Xv4laAkkToQVPD8jVA8FYqYVQAsjRPEDc18FYqYVQAovajslYEEjdwHFaiAmatEzRJwVYAomc5sjRPEjd4omb4Imcxgmb2MmdNUTUA8FYqYVQAo2TnUlZjEjcs4VasESPJP2TnUlZjEDc3MmbwX2b0Mmbwg2cyEmb0QWczImQH0TP0gmQH0TP1gWcxE2bxTGd1IWc2EWL1YDRMEDcq8VYnclBhMjXvklYmw1QlEVZtoFZCITLLcjahM1XlwFYuMFbt41ZkQ1alMFaoI1aj81asYlXKcDaoI1aZczTnUlXjMDbgovZnU1Yj8lToQ1UCIFZtoVauMTat0VawDzajslYhw1P1QzSuYVP2cVZpI1atETcpcFVowVPNUTUAoWLQQEZlEDQJ7jVA4TQUEjQHsFYAsjRPEDbkAmatUVPNUTUAgFbms1TAgGYhEVZq0VP5EEUnYVPFgTSAsjRPMzajslYhw1PvElBqgVamMjZmgUZrEDQOo0Pq8VYnclXCMlZl0VXvMjYgklahg1PrcFbjAmaA8FYqYlXrMzajslYEEDamAGYv4VP2ovTnUlXjMTdFgTSCw1YvQFbtETXiMFaog1Pq8VYnclXCs1ZvIlaiMjXrMFbl41PJwVYkk1Ps4VasESPFgTSCgFbJb1ZSEDYhEVZq0VPD8jVAYDRMEDQOoUP04TQUETcKoDTAYmQH0TP1kGc4M2RJAUPyomcwP2c1IGc0YWLKoDTAgmBD8jVAMmQH0TPyYWbBMSbBMSbBMSbBMSbwHzLwITM4DmPwDCamAGYn41Pl8FaqclZGkFYsEVaqMTanUFahg1Qio.bt41XkczasYlXjk1PwXjZnQ1alEVZtoFZC81an0FbvQ1a1MlarMlZtMzajslYEEjXrMFbt4VPD8zalEDcpcFVJjFaAUmXrMFbt4VPxc2bzEibKoDTAIzL2IzL0E2LyIzLyQ2bxQ2b0kmb2U2RJAUP3kmcwf2cwfWVRkFYAQzSZEjBKoDakEDbkAmatUVPFgzZjEjQHsFYAkmZmgUZrETd1E2bxESbwHmL0IGMyIScycGcwDmc3QWLxEiPyjSbBMSbBovLwDmPyDmbwImPyD2LBMiSEU0Pl8FaqUlZGMEZkIFYj8FboYFYXcjZh8lav0FYuklZI8DYuo1auA2XnQ1aKoDTJLjXvklYuw1Ps4VasESPQQEblETVRkFYA8FYqYVQAEEUnYVPuQ1ZlUTPFgTSAQWLwIybxISbwHzLxESbxHzLwEiBBMSbxITLwHmPwDSbBMSbBMSbwHmL0ESd3EibyIWLBcSbBYyMwEibwIzMwEiPyDmP2DSbwHzLwIzMwIzLwMiPwnPMhw1XvYlaCIFaiAmYtMjXrMFbt4VPsoFZmY0Pu0lYhQVZCEEUvYVPRkFYWMzRJwVYCMlZl0VXvQ1apcFVowVPJrjRPEzTnUlZjMTVREFYCQlXgk1ZsEDYhEVZq0VPD8zalEjSE0VYAo1YXkFaAkkTgQ1P0YDRqQVPgM1XrEFZC8lBsYlXjk1Ps4VasESPjIVXosVaAo1YXkFaAkkToQVPYIUZjEjSE0VYAYDRMMDdzcGcNUTUAcGc3omQH0TPD8zaloPPYIUXjMTTTglYCMlZl0VTC0las0VYsMjQHsFYCE1XiwVZnMDZnYkXvMzRJwVYAIFaiAmatEzRJwVYAQzSuYVPJPlXgk1ZsEDZvc1ZSEjZmgUZrETbxQzSZEjdFgzZjEjXrMFbt4VPKoDakEjYgklahg1PuQ1ZlIFaCo1YXkFaAMlBpYVagA2PSgVYpQVPzkkToQVPuQ1ZlUTPjIVXosVaAIFaiAmatETTTglYAgmdD8jVAEEUvYVPnglUhA2PYIUXjovPSgVYpQVPsY1XgwVXC0las0VLAgFbms1TAs1ZvIlaiMTXmklXpY1PFgTSCk2czMEZkIFYCE1XiwVXnMjalgVZJblZCsjRPEjZu8Fbig1PnA2YqEzP3AWYv4lYkMjds4VasUVaCEEUnY1PzMlZl0VTC0las0VLAw1YvQFZtMDYhElBoMVaCQlXgk1XsMzRJwVYAgFbms1TAgFZVIFbCcVZpI1atEDZvc1ZAMjZmgUZrEDdxkmZu8Fbig1PD8jVCk2bFo.RqQVPJwVYkk1P18FYqYVQA8FYqYlXrMjZmgUZrETVREFYCsjRPEjZmgUZrETTTglYCgFahU1ZuQ1arEFZisVZJP1aD8jVA0FaqIVYlQ1aQQEblMDYhEVZi01PlU1ajMlYj8lap01avg1PYIUXjMDZnYkXvMDQOoUPNUTUAYDRqQlBAkmSEUUPQQEZlEDc4Qmc3U2cwHmcyU2cwk2cykmcysjRPEzajslYEETTTglYAYDRqQVPQQEZlEjQH0zPugFbrovZpMjToQ1UCo1YXkFaAgmcD8jVAUGQOoUPNUTUAM2RJAUPQQEZlETdnA2YqMUP5EiZmgUZrEjbFgTSAUWLzIGdJT2bzUmPyLGcwMmb3sjRrUVPD8jVAo2RJAUPFgTSAMGc0ImPyHWLzEmbBMibwLWL3QWd2UmbwMWcyIWcyE2LyImBxLmLxMWcwMmbQQEZlEjap01avgFYuQlXgk1ZsEzZgI1ZiA2QhE1RJQ1anwlXks1aj8Fagg1XmkFYu8lYtE1XiovQhU1Zu0FZj8FbkAmalU1PFgzZjMDZvc1ZSEjYgklahg1PNUTUAQ2cyQWd1YDRMETd1k2b4UGd0ombD8jVAMWTJPEZlEDc5YDRMEDYhEVZq0VPgM1XrEFZCo1YXEFaCQzSZMDZnYkXvMDbsslZnI1PnA2YqMUPYIUXjMTTTglYAolBmgUXrMjSEUUPNUTakEjSEUUPnA2YqMUPYIUZjETVRkFYAgFbms1TAMlZl0VXvMzTnUlZjMDamAGYv4VPM4FanofZCYDRqQVPD8jVA4TQUEDdKoDTAMGd4Umc0ImdwLEZkoFYAEEUnYVP5YDRMEjZmgUZrETcFgTSAQGd1QWbyESbJDib4EiQH0TP2Ymb0MmbwIibwIzMwEiPyDGMBMSbyHzLwIWb0HzLNUTakETStwFZpMDZjcVZpI1PgM1XrkFZC0lBlMVXjE1PYIUXjMTTTglYAQlXgk1ZsEzajslYEEjb1QWbBMibwMiPyDWLBMSbBMSbBMSbwHzMxE2bBMSbyESbyoPb0QWL3cWLzkmdFgTSAQ2cyI2czY2c1I2bxHmPyHmLwMibBMibBMSbw.iPyDmPwDSbBESNwEiPyDmPyDmLBcSbJHiPyDmPyDmPyDGNBciSEUUP1YDRMMTVRkFYAI2RJAUPSgVYpQVPFgzZjEjZmgUXrMzb0o1YXkFaAkWc2E2cxQmB0k2c3UmLyQ2bzgWdFgTSAYDRMEDdKoDTA4TQUEzRJA0PnA2YqMUPNUTUCgmZu8Fbig1PRkFYWMTTTglYAgFZVofXvMzajslYEEzTnUlZjEDQO8lYAo1YXkFaAAWYv4lakEzajslYEEjZmgUXrMzXpYVagA2Phw1Xv4laAQlYl8FaJr1PD8jVAgFbmsVPCQzSZMzYoolXm41PD8zalEzTnUlXjMzcugFbrslZCY1Yg81XtQ1avUFbt4VYCQzSuYVPRklBjc0PuQ1ZlUTPKoDakETTTglYAsjRPEzRJwVYA0las0VLA0lYiEFYgMTat0VawDDcFgTSCkGbkAmatUVPmklZhovatETVREFYCEEUnYVPKoDTCEEUvYVPYIUZjEDYhEVZq0VP2UmdSgVYpQVPvUFbt4VYAk2TnUlXjMjd4gFbms1TJDjYgklahg1PvUFbt4VYAE1XiwVXnMzRJwVYAkkToQVPjIVXosVaAMEZkoFYA8FYqYVQAEEUvYVP2UWat0VawDjBQQEZlEjcNUTUAkkToQVPFgzZjETd2QzSZETTTAmYAcVZpI1atEjQH0TPKoDTC4TQsUVPNUTUAkmQH0TPNUTUAofZmgUZrEjdFgzZjEjXrMFbt4VP20las0VLAQmc2oWdYIUZjETc1kGQOoUPzI2bzImc0IWb0IWLysjRPETdjIVXJj1ZsEDdNUTUAYDRqQVPnQ1YoolXCgFahU1ZuMzRJwVYAo2YoolXu4VPuQ1ZlUTPFgTSAo1YXkFaAYDRMEjZmgkBowVPmklZh8laAk2b1EiQH0TPnglUhA2PnglUhA2PiAmatMVYj8FZnYkXvMjXrMFbl41Pu0lYhQVZCAWYv4lYkovPRkFYWMDamAGYv4VPFgzZjEjSE0VYA0las0VLAo1YXkFaAY2ajslYEEzRJwVYAEEUnYVPnglUhA2Px0las0VLJDzRJwVYAw1YvQFbtEjdFgTSAkkToQVP5c2RJwVYAo1YXkFaAQ2RJwVYAw1YvQFbtEDbkAmatUVPzEEUvYVPNUjBUEDQOoUP3Q2cwnWVRkFYAsjRPEjQHsFYAsjRPETTTAmYAkkToQVPnA2YqMUPYIUZjEjQH0TPxkkToQVPSgVYpo.YAYDRMEzcKoDTAo1YXkFaAo1YXkFaAYDRMEjQH0TP4ImSEUUPzEidw.WYv4lakEzcKoDakETTTglYAg2ajslYJTTPpcFVgw1P2M2cxoGamAGYv4VPzo2czYWd2Ymb1kmc2Umb2EWLxUmbxLmbwDGQO8lYAcWTTglYAo2ajslYhwlBC0jarglZCEEUvYVPO8lYlE1PsY1XgQVXC4TQUETVRkFYAgmc3Y2ajslYEEDcKoDTAgmSEUUPD8jVAgFbmsVPCo.Zvc1ZSEDamAGYv4VPjIVXosVaAgWLNUTakEDQOoUPnA2YqMUPrcFbjAmaAgWLNUTUA4TQUEDc5M2cFgTSAoGdJjkToQVPD8jVA8FYqYVQAQzSZEjSEUUP0YDRqQVPFgTSAomSEUUPNUTakETdwXDRMEjZmgUZrEzTnUlZjEzb0YmBNUTUAEEUnYVPD8jVAsjRPETdzESTTglYA4TQUEDQOoUP4U2b3UGc54TQUEzRJAUP5IWLzgmbzEWc2I2c4cmbFo.RMEDdzcmdrcFbjAmaAUWTTglYAYWLzsjRPEDZvc1ZSEzajslYEEzczYDRMEzb3YGcwQ2b0Mmb0EWc3UWVRkFYJDzTnUlZjEzajslYEEjXrMFbl41PJwVYsk1Pu0lYhQVZCo1auA2XnMDQOoUPxQmZmgUZrEzRJAUP1EyczIWcyYmB0Q2RJAUPD8jVAEmdNUTUAoWTTAmYAMEZkoFYAMGdNUTUAUWd3YDRMEDc0k2c3MWTTglYAoWd2YmL3QmQH0TPzovbxU2bwDmLycmPyLGc0cGc3MmbyIWL2Y2bwHGc1QWcxMWbyQ2bxEmcyECdwQ2cBMiXrMFbt4VPYIUZjEjSEUUPJHmQH0TP2I2cYIUZjEzajslYEEjbD8jVAUGdzU2cwD2bwEybzYWd5o1YXkFaAU2RJAUPpcFVowVPhw1Xv4laA4jBEUUP1sjRPEDdKoDTAYWLyUmc0Qmb0MmbyYWbyYDRMEDdyU2c4IWbyImcxMmb0EWcxESb0QmbwTWLyI2bwTmbwnPbBcSbBMSbBcSbBMSbxHWbBMSb4HzLwQiPyHmPyDmLxEWLxEGZvc1ZSEzRJAUPKoDTAQWTTglYAQGd2o1YXkFaJDDd1o1YXkFaAkkToQVP0Qmb1QmbwMWbykmb5kGZvc1ZSETTTglYA8ValIFYoMjdNUTUAkkToQVP5UmPyL2RJAkBAIWbxUWLzg2bwH2b2MmPyD2b1cmcyIWLwIScwEibwIzL1IzLwIWL0IWbxE2bwHWLwIzLwITLwHWbxHWLBMSbxoPbxESbxESbwHWLwITL0DmPyDGMBMSbyHzMw4TQUEDdwUWbyHWbBcSbzHjLyDmLBMSbwHWLwMiP2DWLBgiM2bFYJb1Xk4VRWITLvL1axHzLtEVZps1aho1Xu0lZq8lXpwjPxjlYBISXlIjMm01YhglZiEFYnAEYgITYlc1ancFTB0lBps1ahoFalElXBESLhYFVBcFYmMVYtkzUBECLk0VYmUFbiE1XtMVXXclZnM1YjcVaZITLvblamI1YjgFYmQVLmoPYmQ1UBUSXsclamI1YjgFYmU1YhgVXno1UBUyXkclamI1YjgFYmUFZgglYmMlP8XCL0LSL1n....",
+			"state": "9168.CMlaKA....fQBMDZ....ALUSDMC...P.....A.............................................................................................................................................................................vHvLBbm0VOHMEHAQGag4FcoMFHScWYrwlBunBPMUFcgofBAUGcn8lb5nvIH81cgIGYfL0XgImbmnfBUMWXmUlNJbRSWAROfP2atU1IJnfJunfBiDTS8nUYhIWXrUFczUlBiXUYxMWOw.CLvLiBiTjajkVXt0CaoQGcrUlBi3Va8DyLJLRay0iau4VYJLRay0SSuQ1UnwlBiz1b8.UZzMFZWovHsMWOCQmbrEjBiz1b8LDcxwlPJLRay0CSl81QwnvHsMWOGEFckovHsMWOVUFauMVZzkmBiz1b8.kbkM2b0IWYJLRay0yRkkmQuwFaucmBiz1b8Tja1EiBiz1b8zzTEcTLJLRay0CSl8VLJLha10iLJLRa10yQgQWYJLRa10SQtYWLJLxXs0SagklaJLzXOAWOw.CMtbSNJLBSF8zQ8DiBizzajYDVwzSLJLBQkwVX4ESOwnvHi0VOPMzaxUlBSITXyUVOznvT2klam0CLt.CLJLEUxk1Y8DiBPM0atcVOwn.TF8Faj0CLJ.kQowVY8DiBGYTZrUVOxnvQSMVXrUVOvnvPnwTX40CLJLUcxI2S8DiBRUlc8bCMxHiBLUDQ8.iKv.iBPEzQE0CLJ.UXmU1bO4VOvnvPuIWYN0yLJLEaoMVY8PiBUkzWuAWOwnPSoQVZA0SMJzTZjkFT8XiBDYzarQVO2nvPzIGaA0iLJLDcxwlP8DSLJLxXs0CSF8zQJLUdtMVOsDiBTIWZm0CLJbUX1UVOwn.TnMWY8DCNtTCLJ.0arElb8.iBiLVa8X0PCovHLYzSwzSLJLxSSMTL8DiBV8VZiU1b8.iBV8VZiklam0SLJzzajUVOvn.TuIGcg0TOvn.TuIGcg0CLt.CLJ.0axQWXxzCLt.CLJ.kTg41Yk0SLv.iKv.iBPITOxn.TBQTOxn.QxYFc8DiBMQUctMUOvnPSTUmaN0CNJzDU04FU8jiBTI2bv0SKwHiBFQUct0CLt.CLJLxXs0SQNYULJzzajUVOxnPZM8FYk0CLJLWSuQVY8.iBo4VZz0CLt.CLJDDcq0CMw3RMvn.QkMVO0.iKv.iBSU2b8DCLv3BLvnvT0MGU8.iKv.iBSU2bxzCLt.CLJHUYr0yM33BLvnfUkwVOv3BLvnfUxjTOv3BLvnfUxDTOv3BLvnfUxPTOv3BLvnfUxLUOv3BLvnfUxXjT8.iKv.iBVIyTxzCLt.CLJXkLR0CLt.CLJrjLI0CLt.CLJrjLA0CLt.CLJrjLD0CLt.CLJrjLS0CLt.CLJrjLFIUOv3BLvnvRxLkL8.iKv.iBKIiT8.iKv.iBSw1avUVOsbSLt.CLJPkPgMWY8.iBiLVa8zzTEcTLJPUaU4VOvnPQtYWOw.iBVUFa8.iKv.iBAQ2Z8.iKv.iBLAGc8.iKv.iBRUFa8.iKv.iBTIWZm0CLJLxXs0CSF8TLJLUdtMVOxLiBTIWZm0CLJbUX1UVOwn.TnMWY8.iKv.iBP8FagIWOvn.QrkWOv3BLvn.QMMUL8.iBD0DQwzCLt.CLJHUXzUVOv3BLvnfQMMUL8.iBF0DQwzCLt.CLJLxXs0ySSMTLJbUX1UVOyn.U04VY8.iKv.iBKUVdSMFa8DCLv3BLvn.UMMkbi0CLJPUSDAGc8.iKv.iBPg1bk0CLt.CLJ.EZy0zTxMVOwDiBPg1bMQDbz0SL23BLvnvUNUWa8TiKv.iBWA0TxMVOwHiBWAEQvQWO33BLvnfUz8FQ8.iKv.iBCUmb1UVOwDiBPIWYi0yLtPCLJXDVwPEb8DCLJLkQXESOw.iKv.iBFgULSMVOwnfQXECQz0yLx3BLvnfQXICUv0iLJLkQXISOsHyMt.CLJXDVxL0X8DiBFgkLDQWOwXiKv.iBP8Fa40yLJPDc04VOwTiKv.iBKY0bi0SLxnfUuwVOz.iKv.iBV8FaSMVO4nfUuwFQz0SKwfiKv.iBPEla8.iKv.iBPElaSMVO4n.Tg4FQz0CMv3BLvnvT441X8.iKv.iBS41XSMVOvnvTtMFQz0CLt.CLJLkai8ja8.iBP8FaW0CLt.CLJ.0cs8ja8.iBWEFUh0SLynfTkAEZy0CLJ3zax0VO0.iK0.iBRUlaj0CLJLxXs0iUMkFdJ.UXt0CLt.CLJX0ar0SMv3BLvnfUCETOwnPSuQ1TxMVOvnPSuQFQvQWOv3BLvn.Tg41TxMVOvn.Tg4FQvQWOv3BLvnPPzQ2T8DiBiLVa8zzajYDVwnPSuQVY8HiBCUlaz0SMv3BLvnvTvUFY8.iKv.iBPg1SlYVO2XiKxTiBDAGcn0SN33hL0nfQkUlP8HSMt.CLJzTZ30iMx3hL0n.SCUGc8.iKv.iBHMTcz0CNv3BLvnPT0EFY8jiMtTCLJDEbnMWOxTiKv.iBLUVb8.iKv.iBHUVb8zhMt.CLJDUL8.iKv.iBQISOv3BLvnPQQ8la8DiBiLVa8PTYrEVdwnPSuQVY8.iBMkFd8TCLt.CLJXjP8DyMtTCLJLjP8TyLt.CLJvDT8DCLv3BLvn.RP0CLt.CLJPjb10CLt.CLJLUdtMVL8jiBSkmaiISOznvT441XyzCMJLUdtMFM8PiBTASOw.CLt.CLJPUL8DCLv3BLvn.UxzSLv.iKv.iBTMSOw.CLt.CLJ.UXtESOsjiMt.CLJ.UXtISOw.CLt.CLJ.UXtMSOsDCLv3BLvn.Tg4FM8DCLv3BLvnvHi0VOZ0TXyovSSMTL8DCMJzzTEcTL8DSMJnfBJnfBu7BHSU1Xzk1atAhYuIGH0cFa4AxXu0FbxU1byUFYfHVZtElb4ABQgQWXJ7xKfPzSNcBUfP0SUMDRfPERIMkBJPBIjPRL4.SL1nvOmAmXikFYjslNmAmXiEFYjwlNqclZrUVYjwlNgslansFYjwlNmAmXikFYjwlNqclZr0VYjwlNkM1Yg8lYjwlNJbFbhMVXjQVa5vVanUlXjQVa5.WYv4lYkQVa5PVa5DVX5Pla5T1X5D1Z5nFa5PFb53FZ5TlX5PlZ5XVZ5jVX5LlBjoyZmoyYgoCYkoSZvoiXioCasoSaioCauoSYkoSYgoSYjoyYvoyYlExYjc1Xk4VRBElXBkyXvUVaYcFYmI1YsofPxPSNmQ1YiUlaIckPw.SYoYFYiEVRnU1YsclXm8FZkclZmQ1XgYFYnglVm0VLi81YoQ1XnElPzHyYjc1Xk4VRJbkP2PyYjc1Xk4VRWITLvjFYhoVXp4VYLAGYv4FQrclYuY1XuQ1YrgVYZg1ZK8FZicFaiYlZiYlasAmXj8VapclBhElXoklYuAWYqYVanwzYp41ai0FamAmYEkEZkwFYpEFbggzal41XoolYvAWXhQVaskzYuIVajclXs81ZsslalovXp0lYoM1Yjc1Xk4VRgUlPw.SXhYlYl4lPmQ1YiUlaIITXhITNkkVVng1Yhg1XmU1XgYFYmQ1Yhg1XwHjLzLyYJP1YiUlaIwjPwLCNmQ1YiUlaIITXhIjL1TyYjc1Xk4VRWITLvL1axHDZlcVanU1XggFYmQ1YhcVaZIjLzvzQBIiBWITLWEiPwvzUBEyZgckPwzVXWITLuE1UmQ1YiUlaIITXiIzMLcjP0vzQBIyUBEyUwHTLLckPwrVXWITLsE1UBoPLuE1UBISRBEiXgkjPwLVXIITLjEVRBEyUIITLlEVRBEySIITLnEVRBECSIITLokVRBEiZgkjPwnVZIITLqEVRJHTLqkVRBECagkjPwvVZIITLsEVRBESaokjPw3VXIITLtkVRBEyagkjPw7VZIITLvEVRBECbokjPxPjPwDVYDIjBwDVZDITLg0FQBEiXgQjPwHVYDITLhkFQBEiXsQjPwLVXDITLiUFQBEyXoQjPwLVaDITLjEFQBECTDITLjkFQBoPLAQjPwbEQBEiUDITLkkFQBESYsQjPwXVXDITLlUFQBEyRDITLl0FQBEySDITLmUFQBEyYoQjPwbVaDITLnEFQJHTLnUFQBECZoQjPwfVaDITLLQjPwj1XDITLoUFQBESZmQjPwjVZDITLosFQBESZsQjPwj1aDITLpEFQBEiZiQjBBEiZkQjPwn1YDITLpkFQBEiZqQjPwnVaDITLp8FQBEyZgQjPwr1XDITLqUFQBEiSDITLqkFQBEyZqQjPwrVaDofPwr1aDITLrEFQBECaiQjPwvVYDITLrcFQBECaoQjPwv1ZDITLSQjPwTEQBESagQjPwPEQBESakQjPwz1YDITLJzVZDITLssFQBESasQjPwz1aDITLtEFQBEiaiQjPw3VYDITLtcFQBEiaoQjPw31ZDITLt0FQBEiauQjPw7VXDIjBw71XDITLuUFQBEyamQjPw7VZDITLusFQBEyasQjPw71aDITLvEFQBECbiQjPw.WYDITLvcFQBECboQjPw.2ZDofPw.WaDITLv8FQmQ1YiUlaIQVXgMlP2vzQBMSXkIjMgUlPyDVYg0lPwjyQiolYsEFbr41QuIFZqUkPxbkPwvzQJHzLlY1ahg1Zj8lPwvzUBIyQEgzZjETYmUjYnUkPwzVXWIzLEgzZjwFas4VaskVaj8lPwHVXIYlYwHlYGIzLpslBpoVLUITLWkzPsAGbjQ1aBMiZqolZwTkPwLVXIITLLcjPyn1ZpoVLUITLLcjP2n1ZpoVLUITLWEiP2n1ZpoVLUofPwrVXWIzMpslZpESUBEyagckP2n1ZpoVLUITLOkjP2n1ZpoVLUITLlEVRBciZqolZwTkPwbURBciZqolZwTkPJDCYgkjP2n1ZpoVLUITLiEVRBciZqolZwTkPwHVXIIzMpslZpESUBESZokjP2n1ZpoVLUITLpEVRBciZqolZwTkBBEiZokjP2n1ZpoVLUITLqEVRBciZqolZwTkPwrVZIIzMpslZpESUBECagkjP2n1ZpoVLUITLrkVRBciZqolZwnPUBESagkjP2n1ZpoVLUITLskVRBciZqolZwTkPw3VXIIzMpslZpESUBEiaokjP2n1ZpoVLUITLuEVRBciZqolZJDSUBEyaokjP2n1ZpoVLUITLvEVRBciZqolZwTkPw.WZIIzMpslZpESUBESMmQ1YiUlaIEVYiElP3bkPw.yQBEiBLcjPwHiLGITLLcjPwHiLGITLLcjPwHiLGITLLcjPwHiLGITLLcjPwHiLGITLLcjPwHiLGITLLcjPwHiLGITLLovQBEiLxbjPwvzQBEiLxbjPwvzQBEiLxbjPwvzQBEiLxbjPwvzQBEiLxbjPwvzQBEiLxbjPwvzQBEiLxbjPwvzQJHTLxHyQBECSGITLwbCSrAmP0vzQBESL2vDavITMLcjPwDyMLwFbBUCSGITLwbCSrAmP0vzQBESL2vDavITMLcjBBESL2vDavITMLcjPwDyMLwFbBUCSGITLwbCSrAmP0vzQBESL2vDavITMLcjPwDyMLwFbBUCSGITLwbCSrAmP0n.SGITLwbCSrAmP0vzQBESL2vDavITMLcjPwDyMLwFbBUCSGITLwbCSrAmP0vzQBESL2vDavITMLcjPzHCL2DVYJHjLmQ1YiUlaIIVXBkyUKUVaAMVYnA2LOUVZjElXogFbybFYmMVYtkjPiElP3bEbkAmalU1PqsFbhI0QQQEblMjBsoFZmQ1awzlas0VYsQ1aEgTSA4jQVQ1atYFZoclZCkFam01YnQ1agM1XrkFZC8FZvw1ZpMDZvc1ZSEzRJA0PSo.ZkIFYCIFaiAmatEDYhEVZq0VP0EEUnYVP3UDRqQVP5UDRqQVPSgVYpQVPNYjUAkkToQVP4IFaiAmatETQH0TPJXVXo4lXnMzRJwVYAsjRPMzXpYVagA2Pp81avMFZCo1YXkFaCcVZpI1atEzajslYFEjRrUVYoMTYsQFZoo1P4QjBOoUPYIUZjEzcEgTSCYVXo4lXnMzRJwVYAEmXrMFbt4VPYIUZjEDQOoUPuQ1ZlYTPKoDTAQmcuQ1ZlYTPuQ1ZlofQAoWLhw1Xv4laAsjRrUVP5YmdKoDTAoWd5IWdxYmb3I2cyomSFYUPuQ1ZlYTP5MEZkoFYAYWat0VawDDcSgVYJnFYAQGdyIWL1MWcyIWb3c2bwIWczUGcxUDRMETc3UDRMEjc3UmbwMmL0gmcxU2cwEicEgTSAQ2ZuUFZmI1PhAmBoY1YrcjYgklapg1PBECSG4lXiMlYrQ1aiAmatsVYj8lYiwVZh8FYu8ValI1RGwVZh8lVGMEZkIFYCAWXqgVYmo.YuIUZjc0Phglap01aC0las0VLA8FYqYlXrMjcD8zalEzcmklZh8laAUmZmgUZrEjSFYUP5ESTTglYAQzSZEjSJXjUAUDRqQVPKoDTAAWYv4lakEjSFYUPnA2YqMUP3QlXgk1ZsEjdQQEZlETQH0TPKoDTC8FYqYlXrMDbgsFZsclBCo1YXkFaAQzSZMzZuUFZmI1PiolYsEFbCYVXo4lXnMDamAGYv4VPuQ1ZlIFaC8FYqYlQAw1YvQFbtEzcSgVYho.YCkWQH0zPrcFbjAmaAE1XiwVZnMzZuUFZmI1PqsFbh41XCIFaiAmYtMjRrUVYoMTat0VawDTQH0zPnA2YqMUPJPlXgk1ZsEDQOoUPEgTSAQzSZETcNYjUAU2RJAUP1UDRMEjc4QWdysjRPEzb5YWLzcmcxQWc1EyRJAUP3QzSZEjByUDRMEzb1EmPyDmPyDmPyDmPyDWLBMSbBUSNwITLwv1YvQFZtMjYuw1Zmo1QoQVag01ZC0FZkwlXnczXv4laioPYG8ValIFYoMTLEoFZj8lYgklapg1Pu8FZsAGbj8lci4FaiolaC8FYqYlQAIFaiAmatEDQO8lYAQmZmgUZrETcJHFaiAmatEjb2MGcwH2RJAUPBMycBMScwMybBMybzMmbzMWc4I2c0sjRPEDd4YWL3cWL3kkToQVPD8jVAsjRrUlBAAWYv4lakETQHsFYAUDRqQVP4o1YXkFaAkmcwMmbwDWLxIScxQybxT2b2QWLwYGdzEibwHzL4DmPyDmPyDSbBovLwIWbxIzLwMiPy3jQVMjYuw1Zko1QSgVYhQFYuAWZlQFVGolXu4FbsQ1aooVROQ1ap81avMFZj81RJA0PhAWZJX1arMTat0VawDTTTAmYAkkToQVPuQ1ZlYTPQQEZlEzajslYFETQH0TPzESbxLmbxDWLBMibwDmLBMSbwHzLwImBBESLxITLwDmPyDmPyDWLxIScwjGdwH2bxEiP2DmP1bSbwHWbBcSbwHzLwIzMwDWLBMSbBcSbBMSbyHTL0HFaio.bl41Phw1XvYlaCIFaiAmatETapg1YUMzasYlXjk1PQQEblEjToQ1UCsjRrU1PiolYsEFbj8lZmgUZrEzRJAUPJLEZkoFYCkkTgQ1PjIVXosVaAQlXgk1ZsEDQO8lYA4jQsUVPpcFVowVPYIUXjMTcEgzZjETXiMFagg1Pu0lYhQlBoMTat0VawDDYhEVZq0VPpcFVowVPYIUZjETVRkFYA4jQsUVPEgTSCgGc2QmSFYUP2QGd5UDRMEDQO8lYAkkTgo.YCEEUnY1PiolYsE0Ps4VasUVaCUDRqQ1PgM1XrkFZCgFZUIFbCsjRrUVPhw1Xv4laAsjRrUVPD8zalEDYhEVZJrVaAgFbms1TAo1YXkFaAEmbD8jVAoWQHsFYAIFaiAmatEzRJwVYAYVXo4lXnMzajslYhw1PpcFVowVPiolYsElBvMzTnUlZjEDcYIUZjEzajslYFEDYhEVZq0VPhw1Xv4laAEEUnYVP3oGQOoUPQQEblEDZnUkXvMTVREFYCMEZkofZjETalMVXrE1Ps4VasESPnA2YqMUPqsFbh41XCE1YoIlZlMTQH0zP4cGcSgVYhQ1PgM1XrEFZC4lYnk1YpMzRJnDTAo1auA2XnMDZvc1ZAMDdvUFbtYVYCoWat0Vak01PQQEZlMDciolYsE0Ps4VasESPrcFbjglaCQlXgk1XsMjBjIVXoMVaCsjRrUVPnA2YqMUPngVUhA2PmklZh8laAgFbmsVPCo1YXkFaAgmb4o1auA2XnMDQOo0P4MWQHsFYAofRrUVYoMjcuQ1ZlYTPuQ1ZlIFaCo1YXkFaAkkTgQ1PKoDTAo1YXkFaAEEUnY1PnwlXks1aj8Fagg1XqkFYuQzSJnUPsw1ZhUlYj8VTTAmYCQlXgk1XsMjYk8FYiYFYu4lZs8FbnMTVREFYCgFZUIFbCQzSZEjSFYUPEgzZjETdNYjBVETTTglYAQWdzYGd0cWLxY2b0cWb4c2b4Y2bKoDTA8FYqYlQAEEUnYVPEgzZjETTTglYAUDRMMzanAGaqo1PRoPZjc0PpcFVowVP3YGQOoUP0QzSZEjSFYUPysjRPETTTglYAkGZvc1ZSEjdwn1YXkFaAIWQH0TP0ECcxgWcyQWcJHzLyQWbyIGdKoDakEDQOoUP5sjRPETQH0TPyQWcxIzLxECcwImPyHWLyECdzk2c0IWbyU2bxU2bwMybxIybxHmByUWbyIWTTglYA4lZs8FbnQ1ajIVXosVaAsVXhs1XvcjXgsjRj8FZrIVYq8FYuwVXnM1YoQ1auYlagM1XGIVYqovasgFYuAWYv4lYkMTQHsFYCgFbms1TAYVXo4lXnMjSFYUPzc2bzkmcEgTSAkmc4MWd0gWc5IGQOoUPyEEUnYVPJPmdEgTSAQlXgk1ZsETXiMFagg1PpcFVgw1PD8jVCgFZUIFbCAWaqoFZhMDZvc1ZSETVREFYCEEUnYVPpcFVgwlBC4jQVEjSF0VYA4jQVEDZvc1ZSETVRkFYAkkToQVPnA2YqMUPiolYsEFbCMEZkoFYCw1YvQFbtETStwFZpMTQHovZjEDQOoUPNYjUAg2RJAUPygWd0YWcxoWLSgVYpQVPQQEZlEjdEgTSAo1YXkFaAUWQH0TPzgmczE2bwDWLxkWLJTDRMEzc1IWcyIWbxHWbBcSbwHzLwQiPyD2LBMSbxEWMBMiSF0VYA0jarglZCgFYmklZhMTXiMFaog1PsY1XgQlBgMTVREFYCEEUnYVPjIVXosVaA8FYqYlQAImczEmPyHWbyHzLwEiPyDmPyDmPyDWLBcibwMmPyD2bwD2bwUGcwn.d2ECc4oWQH0TPzc2bxcGc1cmcxMmLxIzLxISbyHmPyHmPyDWLvHzLwITLwDmPwjSbwHzLwIzLwIiP2DmLBMSbJHzLwIzLwgiP23jQVEjcEgTSCkkToQVPxsjRPEzTnUlZjETQHsFYAo1YXEFaCMWcpcFVowVP4U2cwcmbzUWd2gmB0IybzMGc3kWQH0TPEgTSAg2RJAUPNYjUAsjRPMDZvc1ZSEjSFY0P3o1auA2XnMjToQ1UCEEUnYVPngVUhA2Puo.YqYlQAMEZkoFYAQzSuYVPpcFVowVPvUFbt4VYA8FYqYlQAo1YXEFaCMlZl0VXvMjXrMFbt4VPjYlYuw1ZCQzSJnUPnA2YqEzPD8jVCcVZpI1YtMDQO8lYAMEZkIFYCc2anAGaqo1PlcVXuMlaj8FbkAmatU1PD8zalEjToQ1UC8lBjslYFEzRJwVYAEEUnYVPKoDTAsjRrUVPs4VasESPsY1XgQVXC0las0VLAQWQH0zP4AWYv4lakEzYoolXu4VPYofTgQ1PQQEZlEzRJA0PQQEblETVRkFYAQlXgk1ZsEzc0o2TnUlZjEDbkAmatUVP4MEZkIFYCoWdnA2YqMUPlEVZJ3lXnMDbkAmatUVPgM1XrEFZCsjRrUVPYIUZjEDYhEVZq0VPSgVYpQVPuQ1ZlYTPQQEblEzc00las0VLAEEUnYlBAYmSFYUPYIUZjETQHsFYAk2cD8jVAEEUvYVPmklZh8laAUDRMEzRJA0PNYTakEjSFYUP4UDRMEjSFYUPpcFVoo.aAoWQHsFYAIFaiAmatEzcs4VasESPzY2c5kWVRkFYAUmc4QzSZEDcxMGcxYWcxEWcxEybKoDTAkGYhEVZq0VPJfmSFYUPEgzZjEDZjcVZpI1PnwlXks1aCsjRrUVP5cVZpI1atEzajslYFETQH0TPpcFVowVPEgTSAo1YXkFaAclBoolXu4VP4MmcwTDRMEDZnUkXvMDZnUkXvMzXv4laiUFYugFZUIFbCIFaiAmYtMzasYlXjk1PvUFbtYVYCIUZjovUCw1YvQFbtETQHsFYA4jQsUVPs4VasESPpcFVowVP18FYqYlQAsjRrUVPQQEZlEDZnUkXvMjbs4VasESPKoDaJTVPrcFbjAmaAoWQH0TPYIUZjEjd2sjRrUVPpcFVowVPzsjRrUVPrcFbjAmaAAWYv4lakEDcQQEblEjSFYUPD8jBZEDdzcWL5kkToQVPKoDTAUDRqQVPKoDTAEEUvYVPYIUZjEDZvc1ZSETVRkFYAUDRMEjbYIUZjEzTnUlZjETQHoPSAc2RJAUPpcFVowVPpcFVowVPEgTSAUDRMETdx4jQVEDcwnWLvUFbt4VYAc2RJwVYAEEUnYVP38FYqYlQAo1YJfUXrMzcycmb5w1YvQFbtEDc5cGc1k2c1Imc4Y2c0I2cwEib0ImLyIWLwQzSuYVP2EEUnYVP58FYqYlXrMTStwlBno1PQQEblEzSuYlYgMTalMVXjE1PNYjUAkkToQVP3YGd18FYqYlQAQ2RJAUP34jQVEDQOoUPnA2YqEzPnA2YqovTAw1YvQFbtEDYhEVZq0VP3EiSF0VYAQzSZEDZvc1ZSEDamAGYv4VP3EiSFYUPNYjUAQmdycWQH0TP5gWVRkFYJDDQOoUPuQ1ZlYTPD8jVA4jQVETcEgzZjETQH0TP54jQVEjSF0VYAkWLEgTSAo1YXkFaAMEZkoFYAMWc14jQVEjBQQEZlEDQOoUPKoDTAkGcwDEUnYVPNYjUAQzSZETd0MGd0QmdNYjUAsjRPEjdxECc3IGcwU2cxcWd2IWQH0TP3o.c2oGamAGYv4VP0EEUnYVP1ECcKoDTAgFbms1TA8FYqYlQAcGcEgTSAMGd1QWbzMWcyIWcwUGd0kkToQVPSgVYJnFYA8FYqYlQAIFaiAmYtMjRrUVaoMzasYlXjk1Pp81avMFZCQzSZEjbzo1YXkFaAsjRPEjcwbGcxU2b1UGcKojBPEDQOoUPwomSFYUP5EEUvYVPSgVYpQVPygmSFYUP0kGdEgTSAQWc4cGdyEEUnYVP5k2c1ICdzUDRMEDcyIWcyoPLwIyb2IzLyQWc2QGdyI2bxEyc1MWLxQmczUmbyE2bzMmbwY2bwfWbzcmPyHFaiAmatETVRkFYA4jQVEjbEgTSJDzcxcWVRkFYA8FYqYlQAIGQOoUP0gGc0cWLwMWbwLGc1kmdpcFVowVP0sjRPEjZmgUZrEjXrMFbt4VPNYjUAYmBKoDTAg2RJAUP1Eyb0YWczIWcyI2b1E2bEgTSAg2b0cWdxE2bxYmbyIWcwUmbwDWczIWL0EybxMWL0IWLwIzMwofPyDmP2DmPyDmLxEmPyDWNBMSbzHzLxIzLwIibwEibwgFbms1TAsjRPEzRJAUPzEEUnYVPzg2cpcFVowVP3YmZJbFVowVPYIUZjETczImczIWbyE2b4Imd4gFbms1TAEEUnYVPu0lYhQVZComSFYUPYIUZjEjd0IzLysjRPEjbwImB0ECc3MWLxM2cyIzLwMmc2Y2bxESbxTWbwHWbBMicBMSbxEScxEmbwMWLxESbBMSbBESLxEmLxEiPyDmbwIWLwofbwDWLxESbBESMwIzLwQiPyD2LBcSbNYjUAgWb0E2LxEmP2DGMBIyLwIiPyDWLxESbyHzMwEiP3XyMmQ1YiUlaJjzUBECLi8lLBMiagklZq8lXpM1aso1ZuIlZLIjLoYlPxDlYBYyYsclXno1XgQFZPQVXBUlYm8FZmAkPso1ZuIlBpwlYgIlPwDiXlgkPmQ1YiUlaIckPw.SYsU1YkA2XgMlaiEFVmoFZicFYm0lVBECLm41YhcFYnQ1YjEyYkcFYWofP0DVam41YhcFYnQ1YkclXnEFZpckP0LVYm41YhcFYnQ1YkgVXnY1YiITO1.CM4.iMJ...",
 			"parameters":
 			[
 				{
@@ -1627,6 +1943,172 @@
 				"height": 229.0,
 				"scroll_position": 79
 			}
+		},
+		{
+			"type": "drums",
+			"name": "Clean 808 Drum Kit",
+			"effects":
+			[
+				{
+					"effect": ":/effects/Beam Me Up Echo.serato-effect",
+					"on": false,
+					"value": 0.0
+				},
+				{
+					"effect": ":/effects/Light Sizzle Crusher.serato-effect",
+					"on": false,
+					"value": 0.0
+				},
+				{
+					"effect": ":/effects/Drums Reverb.serato-effect",
+					"on": false,
+					"value": 0.0
+				}
+			],
+			"drums":
+			[
+				{
+					"file": "content:///Serato%20Packs/Core/Drums/Clean%20808%20Drum%20Kit/01%20Punch%20Kick%20%28Clean%20808%20Drum%20Kit%29.wav",
+					"end": 0.31333333333333335
+				},
+				{
+					"file": "content:///Serato%20Packs/Core/Drums/Clean%20808%20Drum%20Kit/02%20Snare%20%28Clean%20808%20Drum%20Kit%29.wav",
+					"effects":
+					[
+						null,
+						null,
+						{
+							"effect": ":/effects/Drums Reverb.serato-effect",
+							"on": false,
+							"value": 0.0
+						}
+					],
+					"end": 0.32034013605442174
+				},
+				{
+					"file": "content:///Serato%20Packs/Core/Drums/Clean%20808%20Drum%20Kit/03%20Closed%20Hi-hat%20%28Clean%20808%20Drum%20Kit%29.wav",
+					"effects_beats": 4,
+					"effects":
+					[
+						null,
+						{
+							"effect": ":/effects/Modulated LPF.serato-effect",
+							"on": false,
+							"value": 0.25934606481481448
+						},
+						{
+							"effect": ":/effects/Delay.serato-effect",
+							"on": false,
+							"value": 1.0
+						}
+					],
+					"end": 0.17560090702947845
+				},
+				{
+					"file": "content:///Serato%20Packs/Core/Drums/Clean%20808%20Drum%20Kit/04%20Open%20Hi-hat%20%28Clean%20808%20Drum%20Kit%29.wav",
+					"end": 0.80678004535147396
+				},
+				{
+					"file": "content:///Serato%20Packs/Core/Drums/Clean%20808%20Drum%20Kit/05%20Dist%20Kick%20%28Clean%20808%20Drum%20Kit%29.wav",
+					"end": 0.86562358276643991
+				},
+				{
+					"file": "content:///Serato%20Packs/Core/Drums/Clean%20808%20Drum%20Kit/06%20Clap%20%28Clean%20808%20Drum%20Kit%29.wav",
+					"end": 2.2224489795918365
+				},
+				{
+					"file": "content:///Serato%20Packs/Core/Drums/Clean%20808%20Drum%20Kit/07%20Clave%20%28Clean%20808%20Drum%20Kit%29.wav",
+					"end": 0.037619047619047621
+				},
+				{
+					"file": "content:///Serato%20Packs/Core/Drums/Clean%20808%20Drum%20Kit/08%20Cowbell%20%28Clean%20808%20Drum%20Kit%29.wav",
+					"end": 1.0016780045351474
+				}
+			],
+			"make_sequence_genre": "random_beat"
+		},
+		{
+			"type": "drums",
+			"name": "Clean 808 Drum Kit",
+			"effects":
+			[
+				{
+					"effect": ":/effects/Beam Me Up Echo.serato-effect",
+					"on": false,
+					"value": 0.0
+				},
+				{
+					"effect": ":/effects/Light Sizzle Crusher.serato-effect",
+					"on": false,
+					"value": 0.0
+				},
+				{
+					"effect": ":/effects/Drums Reverb.serato-effect",
+					"on": false,
+					"value": 0.0
+				}
+			],
+			"drums":
+			[
+				{
+					"file": "content:///Serato%20Packs/Core/Drums/Clean%20808%20Drum%20Kit/01%20Punch%20Kick%20%28Clean%20808%20Drum%20Kit%29.wav",
+					"end": 0.31333333333333335
+				},
+				{
+					"file": "content:///Serato%20Packs/Core/Drums/Clean%20808%20Drum%20Kit/02%20Snare%20%28Clean%20808%20Drum%20Kit%29.wav",
+					"effects":
+					[
+						null,
+						null,
+						{
+							"effect": ":/effects/Drums Reverb.serato-effect",
+							"on": false,
+							"value": 0.0
+						}
+					],
+					"end": 0.32034013605442174
+				},
+				{
+					"file": "content:///Serato%20Packs/Core/Drums/Clean%20808%20Drum%20Kit/03%20Closed%20Hi-hat%20%28Clean%20808%20Drum%20Kit%29.wav",
+					"effects_beats": 4,
+					"effects":
+					[
+						null,
+						{
+							"effect": ":/effects/Modulated LPF.serato-effect",
+							"on": false,
+							"value": 0.25934606481481448
+						},
+						{
+							"effect": ":/effects/Delay.serato-effect",
+							"on": false,
+							"value": 1.0
+						}
+					],
+					"end": 0.17560090702947845
+				},
+				{
+					"file": "content:///Serato%20Packs/Core/Drums/Clean%20808%20Drum%20Kit/04%20Open%20Hi-hat%20%28Clean%20808%20Drum%20Kit%29.wav",
+					"end": 0.80678004535147396
+				},
+				{
+					"file": "content:///Serato%20Packs/Core/Drums/Clean%20808%20Drum%20Kit/05%20Dist%20Kick%20%28Clean%20808%20Drum%20Kit%29.wav",
+					"end": 0.86562358276643991
+				},
+				{
+					"file": "content:///Serato%20Packs/Core/Drums/Clean%20808%20Drum%20Kit/06%20Clap%20%28Clean%20808%20Drum%20Kit%29.wav",
+					"end": 2.2224489795918365
+				},
+				{
+					"file": "content:///Serato%20Packs/Core/Drums/Clean%20808%20Drum%20Kit/07%20Clave%20%28Clean%20808%20Drum%20Kit%29.wav",
+					"end": 0.037619047619047621
+				},
+				{
+					"file": "content:///Serato%20Packs/Core/Drums/Clean%20808%20Drum%20Kit/08%20Cowbell%20%28Clean%20808%20Drum%20Kit%29.wav",
+					"end": 1.0016780045351474
+				}
+			],
+			"make_sequence_genre": "random_beat"
 		}
 	],
 	"scenes":
@@ -1763,30 +2245,6 @@
 							"start": 6960.0,
 							"duration": 120.0,
 							"number": 5,
-							"velocity": 100
-						},
-						{
-							"start": 480.0,
-							"duration": 240.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 4320.0,
-							"duration": 240.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 5280.0,
-							"duration": 120.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 6240.0,
-							"duration": 240.0,
-							"number": 2,
 							"velocity": 100
 						},
 						{
@@ -2065,54 +2523,6 @@
 							"velocity": 106
 						},
 						{
-							"start": 8160.0,
-							"duration": 240.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 9120.0,
-							"duration": 240.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 10080.0,
-							"duration": 240.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 11040.0,
-							"duration": 240.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 12000.0,
-							"duration": 240.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 12960.0,
-							"duration": 240.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 13920.0,
-							"duration": 240.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 14880.0,
-							"duration": 240.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
 							"start": 2640.0,
 							"duration": 120.0,
 							"number": 5,
@@ -2122,12 +2532,6 @@
 							"start": 480.0,
 							"duration": 120.0,
 							"number": 6,
-							"velocity": 100
-						},
-						{
-							"start": 960.0,
-							"duration": 120.0,
-							"number": 5,
 							"velocity": 100
 						},
 						{
@@ -2152,30 +2556,6 @@
 							"start": 3120.0,
 							"duration": 120.0,
 							"number": 6,
-							"velocity": 100
-						},
-						{
-							"start": 1440.0,
-							"duration": 120.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 1680.0,
-							"duration": 120.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 3360.0,
-							"duration": 120.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 2400.0,
-							"duration": 120.0,
-							"number": 2,
 							"velocity": 100
 						},
 						{
@@ -2272,30 +2652,6 @@
 							"start": 7200.0,
 							"duration": 120.0,
 							"number": 7,
-							"velocity": 100
-						},
-						{
-							"start": 5520.0,
-							"duration": 240.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 7200.0,
-							"duration": 240.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 9360.0,
-							"duration": 240.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 13200.0,
-							"duration": 240.0,
-							"number": 2,
 							"velocity": 100
 						},
 						{
@@ -2420,12 +2776,6 @@
 						},
 						{
 							"start": 15840.0,
-							"duration": 240.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 15840.0,
 							"duration": 120.0,
 							"number": 6,
 							"velocity": 100
@@ -2469,19 +2819,7 @@
 						{
 							"start": 16800.0,
 							"duration": 120.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 16800.0,
-							"duration": 120.0,
 							"number": 7,
-							"velocity": 100
-						},
-						{
-							"start": 17040.0,
-							"duration": 120.0,
-							"number": 2,
 							"velocity": 100
 						},
 						{
@@ -2506,12 +2844,6 @@
 							"start": 17280.0,
 							"duration": 120.0,
 							"number": 7,
-							"velocity": 100
-						},
-						{
-							"start": 17760.0,
-							"duration": 120.0,
-							"number": 2,
 							"velocity": 100
 						},
 						{
@@ -2571,12 +2903,6 @@
 						{
 							"start": 18720.0,
 							"duration": 120.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 18720.0,
-							"duration": 120.0,
 							"number": 7,
 							"velocity": 100
 						},
@@ -2608,12 +2934,6 @@
 							"start": 19680.0,
 							"duration": 240.0,
 							"number": 7,
-							"velocity": 100
-						},
-						{
-							"start": 19680.0,
-							"duration": 240.0,
-							"number": 2,
 							"velocity": 100
 						},
 						{
@@ -2655,19 +2975,7 @@
 						{
 							"start": 20640.0,
 							"duration": 240.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 20640.0,
-							"duration": 240.0,
 							"number": 7,
-							"velocity": 100
-						},
-						{
-							"start": 20880.0,
-							"duration": 240.0,
-							"number": 2,
 							"velocity": 100
 						},
 						{
@@ -2703,12 +3011,6 @@
 							"start": 21600.0,
 							"duration": 240.0,
 							"number": 6,
-							"velocity": 100
-						},
-						{
-							"start": 21600.0,
-							"duration": 240.0,
-							"number": 2,
 							"velocity": 100
 						},
 						{
@@ -2766,12 +3068,6 @@
 							"velocity": 100
 						},
 						{
-							"start": 22560.0,
-							"duration": 240.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
 							"start": 23040.0,
 							"duration": 240.0,
 							"number": 0,
@@ -2808,12 +3104,6 @@
 							"velocity": 100
 						},
 						{
-							"start": 23520.0,
-							"duration": 240.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
 							"start": 23760.0,
 							"duration": 240.0,
 							"number": 7,
@@ -2846,19 +3136,7 @@
 						{
 							"start": 24480.0,
 							"duration": 240.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 24480.0,
-							"duration": 240.0,
 							"number": 7,
-							"velocity": 100
-						},
-						{
-							"start": 24720.0,
-							"duration": 240.0,
-							"number": 2,
 							"velocity": 100
 						},
 						{
@@ -2895,12 +3173,6 @@
 							"start": 25440.0,
 							"duration": 240.0,
 							"number": 6,
-							"velocity": 100
-						},
-						{
-							"start": 25440.0,
-							"duration": 240.0,
-							"number": 2,
 							"velocity": 100
 						},
 						{
@@ -2943,12 +3215,6 @@
 							"start": 26160.0,
 							"duration": 240.0,
 							"number": 6,
-							"velocity": 100
-						},
-						{
-							"start": 26400.0,
-							"duration": 240.0,
-							"number": 2,
 							"velocity": 100
 						},
 						{
@@ -2994,12 +3260,6 @@
 							"velocity": 100
 						},
 						{
-							"start": 27360.0,
-							"duration": 240.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
 							"start": 27600.0,
 							"duration": 240.0,
 							"number": 7,
@@ -3032,19 +3292,7 @@
 						{
 							"start": 28320.0,
 							"duration": 240.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 28320.0,
-							"duration": 240.0,
 							"number": 7,
-							"velocity": 100
-						},
-						{
-							"start": 28560.0,
-							"duration": 240.0,
-							"number": 2,
 							"velocity": 100
 						},
 						{
@@ -3081,12 +3329,6 @@
 							"start": 29280.0,
 							"duration": 240.0,
 							"number": 6,
-							"velocity": 100
-						},
-						{
-							"start": 29280.0,
-							"duration": 240.0,
-							"number": 2,
 							"velocity": 100
 						},
 						{
@@ -3140,37 +3382,7 @@
 						{
 							"start": 30240.0,
 							"duration": 240.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 30240.0,
-							"duration": 240.0,
 							"number": 7,
-							"velocity": 100
-						},
-						{
-							"start": 1920.0,
-							"duration": 120.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 5760.0,
-							"duration": 120.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 9600.0,
-							"duration": 120.0,
-							"number": 2,
-							"velocity": 100
-						},
-						{
-							"start": 13440.0,
-							"duration": 120.0,
-							"number": 2,
 							"velocity": 100
 						},
 						{
@@ -3222,7 +3434,67 @@
 							"velocity": 100
 						},
 						{
-							"start": 10320.0,
+							"start": 960.0,
+							"duration": 240.0,
+							"number": 5,
+							"velocity": 100
+						},
+						{
+							"start": 480.0,
+							"duration": 240.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 4320.0,
+							"duration": 240.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 1680.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 3360.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 7200.0,
+							"duration": 240.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 1920.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 0.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 240.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 1440.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 2400.0,
 							"duration": 120.0,
 							"number": 2,
 							"velocity": 100
@@ -3234,13 +3506,439 @@
 							"velocity": 100
 						},
 						{
+							"start": 2880.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 3840.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 4080.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 5520.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 5760.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 5280.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 6240.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
 							"start": 6480.0,
 							"duration": 120.0,
 							"number": 2,
 							"velocity": 100
 						},
 						{
+							"start": 6720.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 6960.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 8160.0,
+							"duration": 240.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 12000.0,
+							"duration": 240.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 9360.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 11040.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 14880.0,
+							"duration": 240.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 9600.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 7680.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 7920.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 9120.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 10080.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 10320.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 10560.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 11520.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 11760.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 13200.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 13440.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 12960.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 13920.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
 							"start": 14160.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 14400.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 14640.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 15840.0,
+							"duration": 240.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 19680.0,
+							"duration": 240.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 17040.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 18720.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 22560.0,
+							"duration": 240.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 17280.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 15360.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 15600.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 16800.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 17760.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 18000.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 18240.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 19200.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 19440.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 20880.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 21120.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 20640.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 21600.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 21840.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 22080.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 22320.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 23520.0,
+							"duration": 240.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 27360.0,
+							"duration": 240.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 24720.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 26400.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 30240.0,
+							"duration": 240.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 24960.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 23040.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 23280.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 24480.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 25440.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 25680.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 25920.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 26880.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 27120.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 28560.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 28800.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 28320.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 29280.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 29520.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 29760.0,
+							"duration": 120.0,
+							"number": 2,
+							"velocity": 100
+						},
+						{
+							"start": 30000.0,
 							"duration": 120.0,
 							"number": 2,
 							"velocity": 100
@@ -4093,1037 +4791,6 @@
 									"value": 0.38443439327485385
 								}
 							]
-						},
-						{
-							"type": "parameter",
-							"parameter": "drum_2_effect_1_value",
-							"keyframes":
-							[
-								{
-									"time": 0.0,
-									"value": 0.2269279970760234
-								},
-								{
-									"time": 120.0,
-									"value": 0.21500365497076024
-								},
-								{
-									"time": 240.0,
-									"value": 0.21223958333333337
-								},
-								{
-									"time": 360.0,
-									"value": 0.21223958333333337
-								},
-								{
-									"time": 480.0,
-									"value": 0.21223958333333337
-								},
-								{
-									"time": 600.0,
-									"value": 0.21223958333333337
-								},
-								{
-									"time": 720.0,
-									"value": 0.21223958333333337
-								},
-								{
-									"time": 840.0,
-									"value": 0.21223958333333337
-								},
-								{
-									"time": 960.0,
-									"value": 0.21223958333333337
-								},
-								{
-									"time": 1080.0,
-									"value": 0.21223958333333337
-								},
-								{
-									"time": 1200.0,
-									"value": 0.21223958333333337
-								},
-								{
-									"time": 1320.0,
-									"value": 0.21223958333333337
-								},
-								{
-									"time": 1440.0,
-									"value": 0.21986933479532167
-								},
-								{
-									"time": 1560.0,
-									"value": 0.22382127192982459
-								},
-								{
-									"time": 1680.0,
-									"value": 0.22382127192982459
-								},
-								{
-									"time": 1800.0,
-									"value": 0.22775036549707606
-								},
-								{
-									"time": 1920.0,
-									"value": 0.22775036549707606
-								},
-								{
-									"time": 2040.0,
-									"value": 0.23350694444444453
-								},
-								{
-									"time": 2160.0,
-									"value": 0.24300986842105265
-								},
-								{
-									"time": 2280.0,
-									"value": 0.25491136695906436
-								},
-								{
-									"time": 2400.0,
-									"value": 0.25692160087719307
-								},
-								{
-									"time": 2520.0,
-									"value": 0.23862390350877194
-								},
-								{
-									"time": 2640.0,
-									"value": 0.2370020102339182
-								},
-								{
-									"time": 2760.0,
-									"value": 0.2370020102339182
-								},
-								{
-									"time": 2880.0,
-									"value": 0.22110288742690065
-								},
-								{
-									"time": 3000.0,
-									"value": 0.21660270467836262
-								},
-								{
-									"time": 3120.0,
-									"value": 0.20828764619883045
-								},
-								{
-									"time": 3240.0,
-									"value": 0.20545504385964919
-								},
-								{
-									"time": 3360.0,
-									"value": 0.20545504385964919
-								},
-								{
-									"time": 3480.0,
-									"value": 0.20826480263157898
-								},
-								{
-									"time": 3600.0,
-									"value": 0.21105171783625731
-								},
-								{
-									"time": 3720.0,
-									"value": 0.22160544590643283
-								},
-								{
-									"time": 3840.0,
-									"value": 0.23060581140350878
-								},
-								{
-									"time": 3960.0,
-									"value": 0.23060581140350878
-								},
-								{
-									"time": 4080.0,
-									"value": 0.23060581140350878
-								},
-								{
-									"time": 4200.0,
-									"value": 0.23060581140350878
-								},
-								{
-									"time": 4320.0,
-									"value": 0.23060581140350878
-								},
-								{
-									"time": 4440.0,
-									"value": 0.23060581140350878
-								},
-								{
-									"time": 4560.0,
-									"value": 0.23060581140350878
-								},
-								{
-									"time": 4680.0,
-									"value": 0.23624817251461994
-								},
-								{
-									"time": 4800.0,
-									"value": 0.24342105263157898
-								},
-								{
-									"time": 4920.0,
-									"value": 0.25059393274853803
-								},
-								{
-									"time": 5040.0,
-									"value": 0.26596765350877194
-								},
-								{
-									"time": 5160.0,
-									"value": 0.26927997076023391
-								},
-								{
-									"time": 5280.0,
-									"value": 0.28385416666666674
-								},
-								{
-									"time": 5400.0,
-									"value": 0.2876005116959065
-								},
-								{
-									"time": 5520.0,
-									"value": 0.29438505116959068
-								},
-								{
-									"time": 5640.0,
-									"value": 0.29815423976608191
-								},
-								{
-									"time": 5760.0,
-									"value": 0.29815423976608191
-								},
-								{
-									"time": 5880.0,
-									"value": 0.29815423976608191
-								},
-								{
-									"time": 6000.0,
-									"value": 0.29815423976608191
-								},
-								{
-									"time": 6120.0,
-									"value": 0.29367690058479534
-								},
-								{
-									"time": 6240.0,
-									"value": 0.29152960526315796
-								},
-								{
-									"time": 6360.0,
-									"value": 0.29152960526315796
-								},
-								{
-									"time": 6480.0,
-									"value": 0.28373994883040943
-								},
-								{
-									"time": 6600.0,
-									"value": 0.28111293859649122
-								},
-								{
-									"time": 6720.0,
-									"value": 0.28111293859649122
-								},
-								{
-									"time": 6840.0,
-									"value": 0.28111293859649122
-								},
-								{
-									"time": 6960.0,
-									"value": 0.28337445175438603
-								},
-								{
-									"time": 7080.0,
-									"value": 0.28805738304093575
-								},
-								{
-									"time": 7200.0,
-									"value": 0.29264894005847952
-								},
-								{
-									"time": 7320.0,
-									"value": 0.29264894005847952
-								},
-								{
-									"time": 7440.0,
-									"value": 0.29479623538011701
-								},
-								{
-									"time": 7560.0,
-									"value": 0.29680646929824561
-								},
-								{
-									"time": 7680.0,
-									"value": 0.22014345760233922
-								},
-								{
-									"time": 7800.0,
-									"value": 0.22014345760233922
-								},
-								{
-									"time": 7920.0,
-									"value": 0.22014345760233922
-								},
-								{
-									"time": 8040.0,
-									"value": 0.22014345760233922
-								},
-								{
-									"time": 8160.0,
-									"value": 0.21669407894736847
-								},
-								{
-									"time": 8280.0,
-									"value": 0.21331323099415211
-								},
-								{
-									"time": 8400.0,
-									"value": 0.21331323099415211
-								},
-								{
-									"time": 8520.0,
-									"value": 0.21331323099415211
-								},
-								{
-									"time": 8640.0,
-									"value": 0.21331323099415211
-								},
-								{
-									"time": 8760.0,
-									"value": 0.21331323099415211
-								},
-								{
-									"time": 8880.0,
-									"value": 0.21331323099415211
-								},
-								{
-									"time": 9000.0,
-									"value": 0.21331323099415211
-								},
-								{
-									"time": 9120.0,
-									"value": 0.21687682748538017
-								},
-								{
-									"time": 9240.0,
-									"value": 0.21687682748538017
-								},
-								{
-									"time": 9360.0,
-									"value": 0.21966374269005851
-								},
-								{
-									"time": 9480.0,
-									"value": 0.21966374269005851
-								},
-								{
-									"time": 9600.0,
-									"value": 0.21966374269005851
-								},
-								{
-									"time": 9720.0,
-									"value": 0.21966374269005851
-								},
-								{
-									"time": 9840.0,
-									"value": 0.21966374269005851
-								},
-								{
-									"time": 9960.0,
-									"value": 0.21966374269005851
-								},
-								{
-									"time": 10080.0,
-									"value": 0.22249634502923976
-								},
-								{
-									"time": 10200.0,
-									"value": 0.2279102704678363
-								},
-								{
-									"time": 10320.0,
-									"value": 0.21925255847953218
-								},
-								{
-									"time": 10440.0,
-									"value": 0.21925255847953218
-								},
-								{
-									"time": 10560.0,
-									"value": 0.21925255847953218
-								},
-								{
-									"time": 10680.0,
-									"value": 0.21925255847953218
-								},
-								{
-									"time": 10800.0,
-									"value": 0.21925255847953218
-								},
-								{
-									"time": 10920.0,
-									"value": 0.21925255847953218
-								},
-								{
-									"time": 11040.0,
-									"value": 0.21925255847953218
-								},
-								{
-									"time": 11160.0,
-									"value": 0.21925255847953218
-								},
-								{
-									"time": 11280.0,
-									"value": 0.21925255847953218
-								},
-								{
-									"time": 11400.0,
-									"value": 0.22311312134502925
-								},
-								{
-									"time": 11520.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 11640.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 11760.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 11880.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 12000.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 12120.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 12240.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 12360.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 12480.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 12600.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 12720.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 12840.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 12960.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 13080.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 13200.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 13320.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 13440.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 13560.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 13680.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 13800.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 13920.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 14040.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 14160.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 14280.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 14400.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 14520.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 14640.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 14760.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 14880.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 15000.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 15120.0,
-									"value": 0.21299342105263164
-								},
-								{
-									"time": 15240.0,
-									"value": 0.17722039473684215
-								},
-								{
-									"time": 15360.0,
-									"value": 0.23565423976608191
-								},
-								{
-									"time": 15480.0,
-									"value": 0.23565423976608191
-								},
-								{
-									"time": 15600.0,
-									"value": 0.23565423976608191
-								},
-								{
-									"time": 15720.0,
-									"value": 0.23565423976608191
-								},
-								{
-									"time": 15840.0,
-									"value": 0.23565423976608191
-								},
-								{
-									"time": 15960.0,
-									"value": 0.23565423976608191
-								},
-								{
-									"time": 16080.0,
-									"value": 0.23565423976608191
-								},
-								{
-									"time": 16200.0,
-									"value": 0.23565423976608191
-								},
-								{
-									"time": 16320.0,
-									"value": 0.23565423976608191
-								},
-								{
-									"time": 16440.0,
-									"value": 0.23565423976608191
-								},
-								{
-									"time": 16560.0,
-									"value": 0.23565423976608191
-								},
-								{
-									"time": 16680.0,
-									"value": 0.23565423976608191
-								},
-								{
-									"time": 16800.0,
-									"value": 0.23565423976608191
-								},
-								{
-									"time": 16920.0,
-									"value": 0.23565423976608191
-								},
-								{
-									"time": 17040.0,
-									"value": 0.23565423976608191
-								},
-								{
-									"time": 17160.0,
-									"value": 0.23565423976608191
-								},
-								{
-									"time": 17280.0,
-									"value": 0.2384639985380117
-								},
-								{
-									"time": 17400.0,
-									"value": 0.24127375730994161
-								},
-								{
-									"time": 17520.0,
-									"value": 0.24127375730994161
-								},
-								{
-									"time": 17640.0,
-									"value": 0.24127375730994161
-								},
-								{
-									"time": 17760.0,
-									"value": 0.24403782894736847
-								},
-								{
-									"time": 17880.0,
-									"value": 0.24680190058479534
-								},
-								{
-									"time": 18000.0,
-									"value": 0.24680190058479534
-								},
-								{
-									"time": 18120.0,
-									"value": 0.24680190058479534
-								},
-								{
-									"time": 18240.0,
-									"value": 0.24680190058479534
-								},
-								{
-									"time": 18360.0,
-									"value": 0.24680190058479534
-								},
-								{
-									"time": 18480.0,
-									"value": 0.24680190058479534
-								},
-								{
-									"time": 18600.0,
-									"value": 0.24680190058479534
-								},
-								{
-									"time": 18720.0,
-									"value": 0.24680190058479534
-								},
-								{
-									"time": 18840.0,
-									"value": 0.24680190058479534
-								},
-								{
-									"time": 18960.0,
-									"value": 0.24680190058479534
-								},
-								{
-									"time": 19080.0,
-									"value": 0.16557017543859653
-								},
-								{
-									"time": 19200.0,
-									"value": 0.20417580409356728
-								},
-								{
-									"time": 19320.0,
-									"value": 0.20417580409356728
-								},
-								{
-									"time": 19440.0,
-									"value": 0.20417580409356728
-								},
-								{
-									"time": 19560.0,
-									"value": 0.20417580409356728
-								},
-								{
-									"time": 19680.0,
-									"value": 0.20417580409356728
-								},
-								{
-									"time": 19800.0,
-									"value": 0.20417580409356728
-								},
-								{
-									"time": 19920.0,
-									"value": 0.20417580409356728
-								},
-								{
-									"time": 20040.0,
-									"value": 0.20417580409356728
-								},
-								{
-									"time": 20160.0,
-									"value": 0.20417580409356728
-								},
-								{
-									"time": 20280.0,
-									"value": 0.20417580409356728
-								},
-								{
-									"time": 20400.0,
-									"value": 0.20417580409356728
-								},
-								{
-									"time": 20520.0,
-									"value": 0.20417580409356728
-								},
-								{
-									"time": 20640.0,
-									"value": 0.20716831140350878
-								},
-								{
-									"time": 20760.0,
-									"value": 0.20716831140350878
-								},
-								{
-									"time": 20880.0,
-									"value": 0.20716831140350878
-								},
-								{
-									"time": 21000.0,
-									"value": 0.20716831140350878
-								},
-								{
-									"time": 21120.0,
-									"value": 0.20716831140350878
-								},
-								{
-									"time": 21240.0,
-									"value": 0.20716831140350878
-								},
-								{
-									"time": 21360.0,
-									"value": 0.20716831140350878
-								},
-								{
-									"time": 21480.0,
-									"value": 0.20716831140350878
-								},
-								{
-									"time": 21600.0,
-									"value": 0.20716831140350878
-								},
-								{
-									"time": 21720.0,
-									"value": 0.20716831140350878
-								},
-								{
-									"time": 21840.0,
-									"value": 0.20716831140350878
-								},
-								{
-									"time": 21960.0,
-									"value": 0.20716831140350878
-								},
-								{
-									"time": 22080.0,
-									"value": 0.20716831140350878
-								},
-								{
-									"time": 22200.0,
-									"value": 0.20716831140350878
-								},
-								{
-									"time": 22320.0,
-									"value": 0.20716831140350878
-								},
-								{
-									"time": 22440.0,
-									"value": 0.20716831140350878
-								},
-								{
-									"time": 22560.0,
-									"value": 0.20716831140350878
-								},
-								{
-									"time": 22680.0,
-									"value": 0.20303362573099415
-								},
-								{
-									"time": 22800.0,
-									"value": 0.20303362573099415
-								},
-								{
-									"time": 22920.0,
-									"value": 0.19937865497076024
-								},
-								{
-									"time": 23040.0,
-									"value": 0.21788194444444453
-								},
-								{
-									"time": 23160.0,
-									"value": 0.21788194444444453
-								},
-								{
-									"time": 23280.0,
-									"value": 0.21788194444444453
-								},
-								{
-									"time": 23400.0,
-									"value": 0.21788194444444453
-								},
-								{
-									"time": 23520.0,
-									"value": 0.21788194444444453
-								},
-								{
-									"time": 23640.0,
-									"value": 0.21788194444444453
-								},
-								{
-									"time": 23760.0,
-									"value": 0.21788194444444453
-								},
-								{
-									"time": 23880.0,
-									"value": 0.21788194444444453
-								},
-								{
-									"time": 24000.0,
-									"value": 0.21788194444444453
-								},
-								{
-									"time": 24120.0,
-									"value": 0.21788194444444453
-								},
-								{
-									"time": 24240.0,
-									"value": 0.21788194444444453
-								},
-								{
-									"time": 24360.0,
-									"value": 0.21788194444444453
-								},
-								{
-									"time": 24480.0,
-									"value": 0.21788194444444453
-								},
-								{
-									"time": 24600.0,
-									"value": 0.22647112573099415
-								},
-								{
-									"time": 24720.0,
-									"value": 0.22647112573099415
-								},
-								{
-									"time": 24840.0,
-									"value": 0.22647112573099415
-								},
-								{
-									"time": 24960.0,
-									"value": 0.22647112573099415
-								},
-								{
-									"time": 25080.0,
-									"value": 0.22647112573099415
-								},
-								{
-									"time": 25200.0,
-									"value": 0.22647112573099415
-								},
-								{
-									"time": 25320.0,
-									"value": 0.22647112573099415
-								},
-								{
-									"time": 25440.0,
-									"value": 0.22647112573099415
-								},
-								{
-									"time": 25560.0,
-									"value": 0.22647112573099415
-								},
-								{
-									"time": 25680.0,
-									"value": 0.22251918859649122
-								},
-								{
-									"time": 25800.0,
-									"value": 0.20061220760233922
-								},
-								{
-									"time": 25920.0,
-									"value": 0.19823647660818722
-								},
-								{
-									"time": 26040.0,
-									"value": 0.19528965643274854
-								},
-								{
-									"time": 26160.0,
-									"value": 0.19528965643274854
-								},
-								{
-									"time": 26280.0,
-									"value": 0.19528965643274854
-								},
-								{
-									"time": 26400.0,
-									"value": 0.1973912646198831
-								},
-								{
-									"time": 26520.0,
-									"value": 0.1994014985380117
-								},
-								{
-									"time": 26640.0,
-									"value": 0.20154879385964919
-								},
-								{
-									"time": 26760.0,
-									"value": 0.20154879385964919
-								},
-								{
-									"time": 26880.0,
-									"value": 0.25075383771929827
-								},
-								{
-									"time": 27000.0,
-									"value": 0.25075383771929827
-								},
-								{
-									"time": 27120.0,
-									"value": 0.25075383771929827
-								},
-								{
-									"time": 27240.0,
-									"value": 0.25075383771929827
-								},
-								{
-									"time": 27360.0,
-									"value": 0.25075383771929827
-								},
-								{
-									"time": 27480.0,
-									"value": 0.23270741959064334
-								},
-								{
-									"time": 27600.0,
-									"value": 0.23270741959064334
-								},
-								{
-									"time": 27720.0,
-									"value": 0.23270741959064334
-								},
-								{
-									"time": 27840.0,
-									"value": 0.23656798245614041
-								},
-								{
-									"time": 27960.0,
-									"value": 0.23850968567251463
-								},
-								{
-									"time": 28080.0,
-									"value": 0.23850968567251463
-								},
-								{
-									"time": 28200.0,
-									"value": 0.23850968567251463
-								},
-								{
-									"time": 28320.0,
-									"value": 0.24643640350877194
-								},
-								{
-									"time": 28440.0,
-									"value": 0.2487207602339182
-								},
-								{
-									"time": 28560.0,
-									"value": 0.25518548976608191
-								},
-								{
-									"time": 28680.0,
-									"value": 0.26133040935672514
-								},
-								{
-									"time": 28800.0,
-									"value": 0.26133040935672514
-								},
-								{
-									"time": 28920.0,
-									"value": 0.26133040935672514
-								},
-								{
-									"time": 29040.0,
-									"value": 0.2513477704678363
-								},
-								{
-									"time": 29160.0,
-									"value": 0.24586531432748537
-								},
-								{
-									"time": 29280.0,
-									"value": 0.24586531432748537
-								},
-								{
-									"time": 29400.0,
-									"value": 0.24586531432748537
-								},
-								{
-									"time": 29520.0,
-									"value": 0.24819535818713456
-								},
-								{
-									"time": 29640.0,
-									"value": 0.24819535818713456
-								},
-								{
-									"time": 29760.0,
-									"value": 0.24819535818713456
-								},
-								{
-									"time": 29880.0,
-									"value": 0.2439007675438597
-								},
-								{
-									"time": 30000.0,
-									"value": 0.24127375730994161
-								},
-								{
-									"time": 30120.0,
-									"value": 0.24127375730994161
-								},
-								{
-									"time": 30240.0,
-									"value": 0.23732182017543868
-								},
-								{
-									"time": 30360.0,
-									"value": 0.23549433479532167
-								},
-								{
-									"time": 30480.0,
-									"value": 0.23549433479532167
-								},
-								{
-									"time": 30600.0,
-									"value": 0.22516904239766089
-								}
-							]
 						}
 					]
 				},
@@ -5335,6 +5002,10 @@
 							]
 						}
 					]
+				},
+				{
+				},
+				{
 				},
 				{
 				},
@@ -8134,6 +7805,10 @@
 							]
 						}
 					]
+				},
+				{
+				},
+				{
 				},
 				{
 				},
@@ -11949,6 +11624,10 @@
 							]
 						}
 					]
+				},
+				{
+				},
+				{
 				},
 				{
 				},
@@ -15827,6 +15506,10 @@
 							]
 						}
 					]
+				},
+				{
+				},
+				{
 				}
 			]
 		},
@@ -19464,6 +19147,10 @@
 				{
 				},
 				{
+				},
+				{
+				},
+				{
 				}
 			]
 		},
@@ -22573,6 +22260,10 @@
 							"velocity": 100
 						}
 					]
+				},
+				{
+				},
+				{
 				},
 				{
 				},
@@ -26213,6 +25904,10 @@
 				{
 				},
 				{
+				},
+				{
+				},
+				{
 				}
 			]
 		},
@@ -27576,6 +27271,10 @@
 				{
 				},
 				{
+				},
+				{
+				},
+				{
 				}
 			]
 		}
@@ -27622,25 +27321,14 @@
 			},
 			{
 				"scene_index": 4
-			},
-			{
-				"scene_index": 4
-			},
-			{
-				"scene_index": 3
 			}
 		],
-		"scroll_position": 0.40670955882352944,
 		"zoom_level": 32.0
 	},
 	"view":
 	{
+		"deck_scene_ratio": 0.50058685446009388,
 		"deck_library_ratio": 0.31048387096774194,
-		"sequencer_scroll_position": 0.33965844402277034,
-		"show_arrangement": true,
-		"show_effects": true,
-		"show_automation": true,
-		"selected_deck_index": 7,
-		"selected_scene_index": 3
+		"show_effects": true
 	}
 }
